@@ -1,0 +1,12 @@
+{
+"80001" : {"attID" : 80001, "PetID" : 80001, "PetName" : 800011, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80002" : {"attID" : 80002, "PetID" : 80001, "PetName" : 800021, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80003" : {"attID" : 80003, "PetID" : 80001, "PetName" : 800031, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80004" : {"attID" : 80004, "PetID" : 80001, "PetName" : 800041, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80005" : {"attID" : 80005, "PetID" : 80001, "PetName" : 800051, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80006" : {"attID" : 80006, "PetID" : 80001, "PetName" : 800061, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80007" : {"attID" : 80007, "PetID" : 80001, "PetName" : 800071, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80008" : {"attID" : 80008, "PetID" : 80001, "PetName" : 800081, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80009" : {"attID" : 80009, "PetID" : 80001, "PetName" : 800091, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}, 
+"80010" : {"attID" : 80010, "PetID" : 80001, "PetName" : 800101, "PetColor" : 4, "PetSpriteName" : 10008, "ZongNum" : 10}
+}

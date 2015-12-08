@@ -1,0 +1,3 @@
+{
+"1001" : {"attID" : 1001, "fightWeiwang" : 1000, "yuanbaoTimes" : 15, "yuanbaoAttkDouble" : 10, "yuanbaoDefDouble" : 10, "yuanbaoHPDouble" : 10, "yuanbaoNum" : 120, "attkAssetsID" : 1611, "attkAssetsNum" : 1, "attkReturnID" : 1609, "attkReturnNum" : 1, "defAssetsID" : 1612, "defAssetsNum" : 1, "defReturnID" : 1609, "defReturnNum" : 1, "hpAssetsID" : 1610, "hpAssetsNum" : 1, "hpReturnID" : 1609, "hpReturnNum" : 1, "defFixDamage" : 300, "zhanLiNum" : 20}
+}

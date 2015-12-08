@@ -1,0 +1,7 @@
+{
+"59001" : {"attID" : 59001, "name" : 590012, "instructions" : 590013, "iconID" : 40009, "customID" : 59001, "weight" : 2000}, 
+"59002" : {"attID" : 59002, "name" : 590022, "instructions" : 590023, "iconID" : 40016, "customID" : 59002, "weight" : 2000}, 
+"59003" : {"attID" : 59003, "name" : 590032, "instructions" : 590033, "iconID" : 40015, "customID" : 59003, "weight" : 2000}, 
+"59004" : {"attID" : 59004, "name" : 590042, "instructions" : 590043, "iconID" : 40013, "customID" : 59004, "weight" : 2000}, 
+"59005" : {"attID" : 59005, "name" : 590052, "instructions" : 590053, "iconID" : 40012, "customID" : 59005, "weight" : 2000}
+}

@@ -1,0 +1,5 @@
+{
+"1001" : {"attID" : 1001, "attName" : 10019, "level" : 1, "hardMapID1" : 22001, "hardMapID2" : 22002}, 
+"1002" : {"attID" : 1002, "attName" : 10029, "level" : 3, "hardMapID1" : 22003, "hardMapID2" : 22004}, 
+"1003" : {"attID" : 1003, "attName" : 10039, "level" : 4, "hardMapID1" : 22005, "hardMapID2" : 22006}
+}

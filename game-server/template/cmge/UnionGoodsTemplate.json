@@ -1,0 +1,15 @@
+{
+"1001" : {"attID" : 1001, "itemID" : 1004, "itemNum" : 6800, "buyNum" : 2, "buyUnionLevel" : 1, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1002" : {"attID" : 1002, "itemID" : 1005, "itemNum" : 5000, "buyNum" : 1, "buyUnionLevel" : 1, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1003" : {"attID" : 1003, "itemID" : 9004, "itemNum" : 10, "buyNum" : 1, "buyUnionLevel" : 1, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 160, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1004" : {"attID" : 1004, "itemID" : 9005, "itemNum" : 10, "buyNum" : 1, "buyUnionLevel" : 1, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 240, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1005" : {"attID" : 1005, "itemID" : 9101, "itemNum" : 1, "buyNum" : 1, "buyUnionLevel" : 1, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 200, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1006" : {"attID" : 1006, "itemID" : 9021, "itemNum" : 2, "buyNum" : 1, "buyUnionLevel" : 2, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1007" : {"attID" : 1007, "itemID" : 1301, "itemNum" : 500, "buyNum" : 2, "buyUnionLevel" : 2, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 333, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1008" : {"attID" : 1008, "itemID" : 9006, "itemNum" : 10, "buyNum" : 1, "buyUnionLevel" : 2, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 320, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1009" : {"attID" : 1009, "itemID" : 9007, "itemNum" : 10, "buyNum" : 1, "buyUnionLevel" : 2, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1010" : {"attID" : 1010, "itemID" : 1006, "itemNum" : 3600, "buyNum" : 1, "buyUnionLevel" : 2, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1012" : {"attID" : 1012, "itemID" : 1007, "itemNum" : 1600, "buyNum" : 1, "buyUnionLevel" : 3, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1013" : {"attID" : 1013, "itemID" : 1008, "itemNum" : 1400, "buyNum" : 1, "buyUnionLevel" : 4, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 400, "consumeID2" : 0, "consumeNum2" : 0}, 
+"1014" : {"attID" : 1014, "itemID" : 2004, "itemNum" : 1, "buyNum" : 1, "buyUnionLevel" : 4, "showUnionLevel" : 1, "consumeID1" : 1501, "consumeNum1" : 3200, "consumeID2" : 0, "consumeNum2" : 0}
+}

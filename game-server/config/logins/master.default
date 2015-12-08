@@ -1,0 +1,5 @@
+{
+    "id": "ls-master-server",
+    "host": "@outerHost",
+    "port": 26095
+}

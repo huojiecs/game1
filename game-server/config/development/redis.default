@@ -1,0 +1,26 @@
+{
+    "asyncPvP": {
+        "host": "@redisHost",
+        "port": "@redisPort",
+        "password": "@redisPassword",
+        "zsetName": "pvp"
+    },
+    "fs": {
+        "host": "@redisHost",
+        "port": "@redisPort",
+        "password": "@redisPassword",
+        "zsetName": "fs"
+    },
+    "chart": {
+        "host": "@redisHost",
+        "port": "@redisPort",
+        "password": "@redisPassword",
+        "zsetName": "chart"
+    },
+    "session": {
+        "host": "@redisHost",
+        "port": "@redisPort",
+        "password": "@redisPassword",
+        "zsetName": "session"
+    }
+}

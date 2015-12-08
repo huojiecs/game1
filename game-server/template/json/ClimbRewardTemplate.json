@@ -1,0 +1,5 @@
+{
+"510001" : {"attID" : 510001, "type" : 1, "descID" : 51000101, "itemID_0" : 1001, "itemNum_0" : 10000, "itemID_1" : 0, "itemNum_1" : 1000, "itemID_2" : 0, "itemNum_2" : 0, "itemID_3" : 0, "itemNum_3" : 0, "itemID_4" : 0, "itemNum_4" : 0}, 
+"510002" : {"attID" : 510002, "type" : 2, "descID" : 51000102, "itemID_0" : 1002, "itemNum_0" : 500, "itemID_1" : 1002, "itemNum_1" : 300, "itemID_2" : 1002, "itemNum_2" : 150, "itemID_3" : 1002, "itemNum_3" : 100, "itemID_4" : 1002, "itemNum_4" : 50}, 
+"510003" : {"attID" : 510003, "type" : 3, "descID" : 51000103, "itemID_0" : 1002, "itemNum_0" : 500, "itemID_1" : 1002, "itemNum_1" : 300, "itemID_2" : 1002, "itemNum_2" : 150, "itemID_3" : 1002, "itemNum_3" : 100, "itemID_4" : 1002, "itemNum_4" : 25}
+}

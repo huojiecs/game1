@@ -1,0 +1,13 @@
+{
+"1" : {"exchangeID" : 1, "type" : 1, "itemID" : 184002, "itemNum" : 1, "rank" : 0, "assetsID" : 1201, "number" : 115000, "buyMax" : 1}, 
+"2" : {"exchangeID" : 2, "type" : 1, "itemID" : 184003, "itemNum" : 1, "rank" : 0, "assetsID" : 1201, "number" : 450000, "buyMax" : 1}, 
+"3" : {"exchangeID" : 3, "type" : 1, "itemID" : 17001, "itemNum" : 3, "rank" : 50, "assetsID" : 1201, "number" : 7500, "buyMax" : 2}, 
+"4" : {"exchangeID" : 4, "type" : 1, "itemID" : 600304, "itemNum" : 1, "rank" : 10, "assetsID" : 1201, "number" : 5000, "buyMax" : 1}, 
+"5" : {"exchangeID" : 5, "type" : 1, "itemID" : 600204, "itemNum" : 1, "rank" : 100, "assetsID" : 1201, "number" : 4000, "buyMax" : 1}, 
+"6" : {"exchangeID" : 6, "type" : 1, "itemID" : 600104, "itemNum" : 1, "rank" : 500, "assetsID" : 1201, "number" : 3000, "buyMax" : 1}, 
+"7" : {"exchangeID" : 7, "type" : 1, "itemID" : 1003, "itemNum" : 1, "rank" : 1000, "assetsID" : 1201, "number" : 1500, "buyMax" : 1}, 
+"8" : {"exchangeID" : 8, "type" : 1, "itemID" : 7001, "itemNum" : 2, "rank" : 0, "assetsID" : 1201, "number" : 1200, "buyMax" : 2}, 
+"9" : {"exchangeID" : 9, "type" : 1, "itemID" : 7002, "itemNum" : 2, "rank" : 0, "assetsID" : 1201, "number" : 1200, "buyMax" : 2}, 
+"10" : {"exchangeID" : 10, "type" : 1, "itemID" : 7517, "itemNum" : 1, "rank" : 0, "assetsID" : 1201, "number" : 5000, "buyMax" : 2}, 
+"11" : {"exchangeID" : 11, "type" : 1, "itemID" : 7518, "itemNum" : 1, "rank" : 0, "assetsID" : 1201, "number" : 10000, "buyMax" : 2}
+}

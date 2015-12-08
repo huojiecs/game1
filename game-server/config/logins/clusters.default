@@ -1,0 +1,21 @@
+{
+    "ls": {
+        "ls-server-1": {
+            "host": "@innerHost",
+            "port": 36061
+        }
+    },
+    "idip": {
+        "idip-ls-server-1": {
+            "host": "@loginHost1",
+            "port": 36058,
+            "idip": [
+                {
+                    "id": "idip-global-server-1",
+                    "host": "@globalHost",
+                    "port": 36059
+                }
+            ]
+        }
+    }
+}

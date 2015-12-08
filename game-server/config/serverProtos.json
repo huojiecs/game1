@@ -1,0 +1,9 @@
+{
+    "connector.entryHandler.Enter": {
+        "required int32 result": 1,
+        "optional string host": 2,
+        "optional int32 port": 3,
+        "optional string url": 4,
+        "optional string message": 5
+    }
+}

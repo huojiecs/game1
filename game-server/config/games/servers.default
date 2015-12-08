@@ -1,0 +1,259 @@
+{
+    "connector": [
+        {
+            "id": "connector-server-1",
+            "host": "@outerHost",
+            "port": 26031,
+            "clientPort": 26021,
+            "frontend": true,
+            "dedicateDispatcher": true,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26021
+        },
+        {
+            "id": "connector-server-2",
+            "host": "@outerHost",
+            "port": 26032,
+            "clientPort": 26022,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26022
+        },
+        {
+            "id": "connector-server-3",
+            "host": "@outerHost",
+            "port": 26033,
+            "clientPort": 26023,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26023
+        },
+        {
+            "id": "connector-server-4",
+            "host": "@outerHost",
+            "port": 26034,
+            "clientPort": 26024,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26024
+        },
+        {
+            "id": "connector-server-5",
+            "host": "@outerHost",
+            "port": 26035,
+            "clientPort": 26025,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26025
+        },
+        {
+            "id": "connector-server-6",
+            "host": "@outerHost",
+            "port": 26036,
+            "clientPort": 26026,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26026
+        },
+        {
+            "id": "connector-server-7",
+            "host": "@outerHost",
+            "port": 26037,
+            "clientPort": 26027,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26027
+        },
+        {
+            "id": "connector-server-8",
+            "host": "@outerHost",
+            "port": 26038,
+            "clientPort": 26028,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26028
+        },
+        {
+            "id": "connector-server-9",
+            "host": "@outerHost",
+            "port": 26039,
+            "clientPort": 26029,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26029
+        }
+    ],
+    "ps": [
+        {
+            "id": "ps-server-1",
+            "host": "127.0.0.1",
+            "port": 26050
+        }
+    ],
+    "psIdip": [
+        {
+            "id": "psIdip-server-1",
+            "host": "127.0.0.1",
+            "port": 26251
+        },
+        {
+            "id": "psIdip-server-2",
+            "host": "127.0.0.1",
+            "port": 26252
+        },
+        {
+            "id": "psIdip-server-3",
+            "host": "127.0.0.1",
+            "port": 26253
+        },
+        {
+            "id": "psIdip-server-4",
+            "host": "127.0.0.1",
+            "port": 26254
+        }
+    ],
+    "chat": [
+        {
+            "id": "chat-server-1",
+            "host": "127.0.0.1",
+            "port": 26051
+        }
+    ],
+    "rs": [
+        {
+            "id": "rs-server-1",
+            "host": "127.0.0.1",
+            "port": 26052
+        }
+    ],
+    "pvp": [
+        {
+            "id": "pvp-server-1",
+            "host": "127.0.0.1",
+            "port": 26053
+        }
+    ],
+    "fs": [
+        {
+            "id": "fs-server-1",
+            "host": "127.0.0.1",
+            "port": 26054
+        }
+    ],
+    "ms": [
+        {
+            "id": "ms-server-1",
+            "host": "127.0.0.1",
+            "port": 26055
+        }
+    ],
+    "chart": [
+        {
+            "id": "chart-server-1",
+            "host": "127.0.0.1",
+            "port": 26056
+        }
+    ],
+    "us": [
+        {
+            "id": "us-server-1",
+            "host": "127.0.0.1",
+            "port": 26060
+        }
+    ],
+    "idip": [
+        {
+            "id": "idip-game-server-1",
+            "host": "127.0.0.1",
+            "port": 26058
+        }
+    ],
+    "js": [
+        {
+            "id": "js-server-1",
+            "host": "127.0.0.1",
+            "port": 26071
+        }
+    ],
+    "cs": [
+        {
+            "id": "cs-server-1",
+            "host": "127.0.0.1",
+            "port": 26041
+        },
+        {
+            "id": "cs-server-2",
+            "host": "127.0.0.1",
+            "port": 26042
+        },
+        {
+            "id": "cs-server-3",
+            "host": "127.0.0.1",
+            "port": 26043
+        },
+        {
+            "id": "cs-server-4",
+            "host": "127.0.0.1",
+            "port": 26044
+        },
+        {
+            "id": "cs-server-5",
+            "host": "127.0.0.1",
+            "port": 26045
+        },
+        {
+            "id": "cs-server-6",
+            "host": "127.0.0.1",
+            "port": 26046
+        },
+        {
+            "id": "cs-server-7",
+            "host": "127.0.0.1",
+            "port": 26047
+        },
+        {
+            "id": "cs-server-8",
+            "host": "127.0.0.1",
+            "port": 26048
+        }
+    ],
+    "dbcache": [
+        {
+            "id": "dbcache-server-1",
+            "host": "127.0.0.1",
+            "port": 26081
+        },
+        {
+            "id": "dbcache-server-2",
+            "host": "127.0.0.1",
+            "port": 26082
+        },
+        {
+            "id": "dbcache-server-3",
+            "host": "127.0.0.1",
+            "port": 26083
+        },
+        {
+            "id": "dbcache-server-4",
+            "host": "127.0.0.1",
+            "port": 26084
+        }
+    ]
+}

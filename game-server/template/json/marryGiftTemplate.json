@@ -1,0 +1,8 @@
+{
+"7201" : {"giftID" : 7201, "giftNameID" : 7201113, "giftDescID" : 7201213, "freeNum" : 0, "giveCount" : 6, "givenum" : 999, "yinYuan" : 1, "suiPianNum" : 2, "assesID" : 1002, "moneyNum" : 2}, 
+"7202" : {"giftID" : 7202, "giftNameID" : 7202113, "giftDescID" : 7202213, "freeNum" : 0, "giveCount" : 6, "givenum" : 999, "yinYuan" : 3, "suiPianNum" : 5, "assesID" : 1002, "moneyNum" : 3}, 
+"7203" : {"giftID" : 7203, "giftNameID" : 7203113, "giftDescID" : 7203213, "freeNum" : 0, "giveCount" : 6, "givenum" : 999, "yinYuan" : 8, "suiPianNum" : 8, "assesID" : 1002, "moneyNum" : 5}, 
+"7204" : {"giftID" : 7204, "giftNameID" : 7204113, "giftDescID" : 7204213, "freeNum" : 0, "giveCount" : 6, "givenum" : 999, "yinYuan" : 30, "suiPianNum" : 15, "assesID" : 1002, "moneyNum" : 10}, 
+"7205" : {"giftID" : 7205, "giftNameID" : 7205113, "giftDescID" : 7205213, "freeNum" : 1, "giveCount" : 0, "givenum" : 1, "yinYuan" : 1, "suiPianNum" : 0, "assesID" : 0, "moneyNum" : 0}, 
+"7206" : {"giftID" : 7206, "giftNameID" : 7206113, "giftDescID" : 7206213, "freeNum" : 1, "giveCount" : 3, "givenum" : 1, "yinYuan" : 1, "suiPianNum" : 0, "assesID" : 1002, "moneyNum" : 20}
+}

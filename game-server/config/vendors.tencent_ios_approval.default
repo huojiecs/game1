@@ -1,0 +1,55 @@
+{
+    "proxy": {
+        "url": ""
+    },
+    "tencent": {
+        "areaId": 2,
+        "platId": 0
+    },
+    "msdkOauth": {
+        "appid": "1000001036",
+        "appKey": "7qSe519KkvZdKQv1",
+        "hostUrl": "http://msdktest.qq.com"
+    },
+    "wxOauth": {
+        "appid": "wx7347e911e01d54d3",
+        "appKey": "ab612d376c6de0797684cdaefa3c2101",
+        "hostUrl": "http://msdktest.qq.com"
+    },
+    "msdkPayment": {
+        "payRelease": 1,
+        "0": {
+            "appid": "1450001003",
+            "appKey": "7qSe519KkvZdKQv1",
+            "discountid": "UM140625151908740",
+            "giftid": "1956241483PID201406251519087475",
+            "hostUrl": "http://msdktest.qq.com"
+        },
+        "1": {
+            "appid": "1000001036",
+            "appKey": "7qSe519KkvZdKQv1",
+            "discountid": "UM140609114902800",
+            "giftid": "1956241483PID201406091149028077",
+            "hostUrl": "http://msdktest.qq.com"
+        },
+        "SYGZ": {
+            "appid": "1450001533",
+            "appKey": "5hgHMZtawbhAtpZutNDzYef9Yo7ycbUx",
+            "hostUrl": "http://msdktest.qq.com"
+        },
+        "cookie": {
+            "3": {
+                "session_id": "openid",
+                "session_type": "kp_actoken"
+            },
+            "5": {
+                "session_id": "hy_gameid",
+                "session_type": "wc_actoken"
+            },
+            "6": {
+                "session_id": "hy_gameid",
+                "session_type": "st_dummy"
+            }
+        }
+    }
+}

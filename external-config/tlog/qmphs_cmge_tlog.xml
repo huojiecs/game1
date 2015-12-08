@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<metalib tagsetversion="1" name="Log" version="1">
+
+    <!--//////////////////////////////////////////////
+        ///////中手游日志：游戏玩家在线人数日志///////////////////////////////
+       /////////////////////////////////////////////////-->
+    <struct name="PlayerOnlineCount" version="1" filter="1" desc="服务器玩家在线人数">
+        <entry name="GameSvrId" type="string" size="25" desc="登录的游戏服务端编号"/>
+        <entry name="dtEventTime" type="datetime" desc="游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="GameAppID" type="string" size="32" desc="游戏APPID"/>
+        <entry name="PlatID" desc="ios 0 /android 1" type="int" defaultvalue="0"/>
+        <entry name="OnlineCount" type="uint" desc="PS 当前登记人数"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+        ///////中手游日志：游戏玩家新手引导日志///////////////////////////////
+       /////////////////////////////////////////////////-->
+    <struct name="PlayerNewHelp" version="1" filter="1" desc="服务器玩家在线人数">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0 /android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="Step" type="int" defaultvalue="0" desc="(必填)新手引导步骤"/>
+    </struct>
+
+</metalib>

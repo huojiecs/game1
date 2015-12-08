@@ -1,0 +1,8 @@
+{
+    "idip": {
+        "idip-global-server-1": {
+            "host": "@globalHost",
+            "port": 36059
+        }
+    }
+}

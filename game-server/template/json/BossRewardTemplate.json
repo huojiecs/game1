@@ -1,0 +1,12 @@
+{
+"1001" : {"attID" : 1001, "minRank" : 1, "maxRank" : 1, "nextID" : 1002, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 200, "prizeID_1" : 1001, "prizeNum_1" : 1000000, "prizeID_2" : 7543, "prizeNum_2" : 120, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1002" : {"attID" : 1002, "minRank" : 2, "maxRank" : 2, "nextID" : 1003, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 150, "prizeID_1" : 1001, "prizeNum_1" : 800000, "prizeID_2" : 7543, "prizeNum_2" : 110, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1003" : {"attID" : 1003, "minRank" : 3, "maxRank" : 3, "nextID" : 1004, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 120, "prizeID_1" : 1001, "prizeNum_1" : 600000, "prizeID_2" : 7543, "prizeNum_2" : 100, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1004" : {"attID" : 1004, "minRank" : 4, "maxRank" : 4, "nextID" : 1005, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 90, "prizeID_1" : 1001, "prizeNum_1" : 400000, "prizeID_2" : 7543, "prizeNum_2" : 90, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1005" : {"attID" : 1005, "minRank" : 5, "maxRank" : 5, "nextID" : 1006, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 60, "prizeID_1" : 1001, "prizeNum_1" : 200000, "prizeID_2" : 7543, "prizeNum_2" : 70, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1006" : {"attID" : 1006, "minRank" : 6, "maxRank" : 20, "nextID" : 1007, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 40, "prizeID_1" : 1001, "prizeNum_1" : 100000, "prizeID_2" : 7543, "prizeNum_2" : 50, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1007" : {"attID" : 1007, "minRank" : 21, "maxRank" : 100, "nextID" : 1008, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 20, "prizeID_1" : 1001, "prizeNum_1" : 50000, "prizeID_2" : 7543, "prizeNum_2" : 30, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"1008" : {"attID" : 1008, "minRank" : 101, "maxRank" : 999999, "nextID" : 0, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 10, "prizeID_1" : 1001, "prizeNum_1" : 10000, "prizeID_2" : 7543, "prizeNum_2" : 20, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"2001" : {"attID" : 2001, "minRank" : -1, "maxRank" : -1, "nextID" : 0, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 50, "prizeID_1" : 1001, "prizeNum_1" : 100000, "prizeID_2" : 17032, "prizeNum_2" : 1, "prizeID_3" : 0, "prizeNum_3" : 0}, 
+"3001" : {"attID" : 3001, "minRank" : -1, "maxRank" : -1, "nextID" : 0, "prizeNum" : 3, "prizeID_0" : 1002, "prizeNum_0" : 100, "prizeID_1" : 1001, "prizeNum_1" : 50000, "prizeID_2" : 7543, "prizeNum_2" : 20, "prizeID_3" : 0, "prizeNum_3" : 0}
+}

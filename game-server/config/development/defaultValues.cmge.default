@@ -1,0 +1,16 @@
+{
+    "isGM": true,
+    "UseTestEnv": 0,
+    "RedisReloadAtStartup": false,
+    "AcrossRedisReloadAtStartup": false,
+    "loginUseGameServerListRestrict": false,
+    "isOpenCheatEnv": 0,
+    "isCheatPlayer": 0,
+    "chatCheck": false,
+    "maxTeamNameLength": 20,
+    "roleNameLenMax": 20,
+    "isCheckName": true,
+    "announcement": 80,
+    "configFolderPath": "./template/cmge",
+    "cmgeRecharge": true
+}

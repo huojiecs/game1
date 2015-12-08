@@ -1,0 +1,7 @@
+{
+"1000" : {"attID" : 1000, "careerID" : 0, "skillPoint" : 251, "perHitCount" : 30, "rangeHitCount" : 180}, 
+"1001" : {"attID" : 1001, "careerID" : 1, "skillPoint" : 230, "perHitCount" : 25, "rangeHitCount" : 250}, 
+"1002" : {"attID" : 1002, "careerID" : 2, "skillPoint" : 410, "perHitCount" : 33, "rangeHitCount" : 220}, 
+"1003" : {"attID" : 1003, "careerID" : 3, "skillPoint" : 410, "perHitCount" : 33, "rangeHitCount" : 200}, 
+"1004" : {"attID" : 1004, "careerID" : 4, "skillPoint" : 410, "perHitCount" : 20, "rangeHitCount" : 180}
+}

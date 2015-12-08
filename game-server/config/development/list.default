@@ -1,0 +1,6 @@
+{
+    "serverUid": @serverUid,
+    "maxUsers": 1000,
+    "isNew": true,
+    "isRecommend": true
+}

@@ -1,0 +1,7 @@
+{
+"100101" : {"attID" : 100101, "needExp" : 1000, "needLevel" : 1, "needWeiwang" : 1000, "buyConsume" : 40}, 
+"100102" : {"attID" : 100102, "needExp" : 4600, "needLevel" : 2, "needWeiwang" : 2000, "buyConsume" : 40}, 
+"100103" : {"attID" : 100103, "needExp" : 10400, "needLevel" : 3, "needWeiwang" : 3000, "buyConsume" : 40}, 
+"100104" : {"attID" : 100104, "needExp" : 23200, "needLevel" : 4, "needWeiwang" : 4000, "buyConsume" : 40}, 
+"100105" : {"attID" : 100105, "needExp" : 0, "needLevel" : 5, "needWeiwang" : 5000, "buyConsume" : 40}
+}

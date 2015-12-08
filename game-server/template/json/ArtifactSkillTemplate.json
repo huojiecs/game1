@@ -1,0 +1,20 @@
+{
+"10000" : {"attID" : 10000, "type" : 0, "num" : 0, "skillID" : 0, "nextAttID" : 10001, "condition" : 0}, 
+"10001" : {"attID" : 10001, "type" : 0, "num" : 100, "skillID" : 400201, "nextAttID" : 10002, "condition" : 100012}, 
+"10002" : {"attID" : 10002, "type" : 0, "num" : 200, "skillID" : 400202, "nextAttID" : 10003, "condition" : 100022}, 
+"10003" : {"attID" : 10003, "type" : 0, "num" : 201, "skillID" : 400203, "nextAttID" : 10004, "condition" : 100032}, 
+"10004" : {"attID" : 10004, "type" : 0, "num" : 300, "skillID" : 400204, "nextAttID" : 10005, "condition" : 100042}, 
+"10005" : {"attID" : 10005, "type" : 0, "num" : 301, "skillID" : 400205, "nextAttID" : 10006, "condition" : 100052}, 
+"10006" : {"attID" : 10006, "type" : 0, "num" : 302, "skillID" : 400206, "nextAttID" : 10007, "condition" : 100062}, 
+"10007" : {"attID" : 10007, "type" : 0, "num" : 400, "skillID" : 400207, "nextAttID" : 10008, "condition" : 100072}, 
+"10008" : {"attID" : 10008, "type" : 0, "num" : 401, "skillID" : 400208, "nextAttID" : 10009, "condition" : 100082}, 
+"10009" : {"attID" : 10009, "type" : 0, "num" : 402, "skillID" : 400209, "nextAttID" : 10010, "condition" : 100092}, 
+"10010" : {"attID" : 10010, "type" : 0, "num" : 403, "skillID" : 400210, "nextAttID" : 10011, "condition" : 100102}, 
+"10011" : {"attID" : 10011, "type" : 0, "num" : 500, "skillID" : 400211, "nextAttID" : 0, "condition" : 100112}, 
+"20000" : {"attID" : 20000, "type" : 1, "num" : 0, "skillID" : 0, "nextAttID" : 20001, "condition" : 0}, 
+"20001" : {"attID" : 20001, "type" : 1, "num" : 1, "skillID" : 400101, "nextAttID" : 20002, "condition" : 200012}, 
+"20002" : {"attID" : 20002, "type" : 1, "num" : 2, "skillID" : 400102, "nextAttID" : 20003, "condition" : 200022}, 
+"20003" : {"attID" : 20003, "type" : 1, "num" : 3, "skillID" : 400103, "nextAttID" : 20004, "condition" : 200032}, 
+"20004" : {"attID" : 20004, "type" : 1, "num" : 4, "skillID" : 400104, "nextAttID" : 20005, "condition" : 200042}, 
+"20005" : {"attID" : 20005, "type" : 1, "num" : 5, "skillID" : 400105, "nextAttID" : 0, "condition" : 200052}
+}

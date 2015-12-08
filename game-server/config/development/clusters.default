@@ -1,0 +1,88 @@
+{
+    "ps": {
+        "ps-server-1": {
+            "host": "@innerHost",
+            "port": 36050,
+            "ls": [
+                {
+                    "id": "ls-server-1",
+                    "host": "@loginHost1",
+                    "port": 36061
+                }
+            ]
+        }
+    },
+    "ls": {
+        "ls-server-1": {
+            "host": "@innerHost",
+            "port": 36061
+        }
+    },
+    "fs": {
+        "fs-server-1": {
+            "host": "@innerHost",
+            "port": 36054,
+            "ls": [
+                {
+                    "id": "ls-server-1",
+                    "host": "@loginHost1",
+                    "port": 36061
+                }
+            ]
+        }
+    },
+    "idip": {
+        "idip-global-server-1": {
+            "host": "@globalHost1",
+            "port": 36059
+        },
+        "idip-global-server-2": {
+            "host": "@globalHost2",
+            "port": 36259
+        },
+        "idip-ls-server-1": {
+            "host": "@loginHost1",
+            "port": 36058,
+            "idip": [
+                {
+                    "id": "idip-global-server-1",
+                    "host": "127.0.0.1",
+                    "port": 36059
+                }
+            ]
+        },
+        "idip-ls-server-2": {
+            "host": "@innerHost",
+            "port": 36258,
+            "idip": [
+                {
+                    "id": "idip-global-server-1",
+                    "host": "127.0.0.1",
+                    "port": 36059
+                }
+            ]
+        },
+        "idip-game-server-1": {
+            "host": "@innerHost",
+            "port": 36057,
+            "idip": [
+                {
+                    "id": "idip-ls-server-1",
+                    "host": "127.0.0.1",
+                    "port": 36058
+                }
+            ]
+        },
+        "idip-game-server-2": {
+            "host": "@innerHost",
+            "port": 36257,
+            "idip": [
+                {
+                    "id": "idip-ls-server-1",
+                    "host": "127.0.0.1",
+                    "port": 36058
+                }
+            ]
+        }
+    }
+}

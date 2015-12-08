@@ -1,0 +1,82 @@
+package TSS;
+
+enum GameCmdID {								// desc="protocol command word"
+    GAME_CMDID_LOGIN_CHANNEL = 1;				// desc="login channel"
+    GAME_CMDID_LOGOUT_CHANNEL = 2;				// desc="logout channel"
+    GAME_CMDID_ROLE_LIST = 3;					// desc="role list"
+    GAME_CMDID_SELECT_ROLE = 4;					// desc="select role"
+    GAME_CMDID_TRANS_ANTI_DATA_DECRYPT = 100;	// desc="transfer Anti decrypt data"
+    GAME_CMDID_TRANS_ANTI_DATA = 101;			// desc="transfer Anti data"
+    GAME_CMDID_TRANS_ENCRYPT_DATA = 102;		// desc="transfer encrypt data"
+}
+
+message TestCase {
+	required int32 head = 1;
+	required int32 auth_signature = 2;		// desc="the signature after QQ login authentification"
+	required int32 client_version = 3;		// desc="client version number"
+}
+
+message ProtoPkgHead {
+	required uint32 pkg_len = 1;
+	required GameCmdID cmdid = 2;
+}
+
+message LoginChannel {
+	required GamePkgHead head = 1;
+	required int32 auth_signature = 2;		// desc="the signature after QQ login authentification"
+	required int32 client_version = 3;		// desc="client version number"
+}
+
+message LogoutChannel {
+	required GamePkgHead head = 1;
+    required int32 flag = 2;	// desc="reserved flag, not used for the moment"
+}
+
+message RoleInfo {
+    required string name = 1;	// desc="role name"
+}
+
+message RoleList {
+	required GamePkgHead head = 1;
+    required int32 role_count = 2;		// 
+    repeated RoleInfo role_infos = 3;	// desc="role list info"
+}
+
+message SelectRole {
+	required GamePkgHead head = 1;
+    required int32 role_name_len = 2;	// desc="role name length"
+    required string role_name = 3;		// desc="role name"
+}
+
+message TransAntiData {
+	required GamePkgHead head = 1;
+    required int32 anti_data_len = 2;	// 
+    required bytes anti_data = 3;		// desc="anti data"
+}
+
+message TransEncryptData {
+	required GamePkgHead head = 1;
+	required GameCmdID cmdid = 2;
+    required int32 anti_data_len = 3;	// 
+    required bytes anti_data = 4;		// desc="anti data"
+}
+
+message GamePkgHead {
+	optional int32 roleid = 1;
+	optional int32 platid = 2;
+	required string openid = 3;
+}
+
+message GamePkgBody {
+	optional LoginChannel login = 1;						// desc="login channel"
+	optional LogoutChannel logout = 2;						// desc="logout channel"
+	optional TransAntiData trans_anti_data = 3;				// desc="transfer Anti data"
+	optional TransAntiData trans_anti_decrypt_data = 4;		// desc="transfer Anti decrypt data"
+	optional RoleList role_list = 5;						// desc="send role list"
+	optional SelectRole select_role = 6;					// desc="select role"
+}
+
+message GamePkg {
+    required GamePkgHead head = 1;
+    required GamePkgBody body = 2;
+}

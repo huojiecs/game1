@@ -1,0 +1,38 @@
+SET FOREIGN_KEY_CHECKS=0;
+DELIMITER ;;
+CREATE PROCEDURE `sp_resetAwardScore`()
+BEGIN
+ 	START TRANSACTION;
+		UPDATE operateinfo SET awardScore = 0;
+ 	COMMIT;
+END;;
+DELIMITER ;
+
+DELIMITER ;;
+CREATE PROCEDURE `sp_resetCostInfo`()
+BEGIN
+ 	START TRANSACTION;
+		UPDATE operateinfo SET costInfo = '{}';
+ 	COMMIT;
+END;;
+DELIMITER ;
+
+DELIMITER ;;
+CREATE PROCEDURE `sp_resetRechargeInfo`()
+BEGIN
+ 	START TRANSACTION;
+		UPDATE operateinfo SET rechargeNum = 0, awardInfo = '[]';
+ 	COMMIT;
+END;;
+DELIMITER ;
+
+DELIMITER ;;
+CREATE PROCEDURE `sp_resetSevenRecharge`()
+BEGIN
+ 	START TRANSACTION;
+		UPDATE operateinfo SET sevenRecharge = 0;
+ 	COMMIT;
+END;;
+DELIMITER ;
+
+SET FOREIGN_KEY_CHECKS=1;

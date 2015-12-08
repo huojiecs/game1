@@ -1,0 +1,11 @@
+{
+"1" : {"exchangeID" : 1, "itemID" : 80006, "itemNum" : 1, "honor" : 1000, "lingli" : 5000, "buyMax" : 3}, 
+"2" : {"exchangeID" : 2, "itemID" : 604104, "itemNum" : 1, "honor" : 3000, "lingli" : 5000, "buyMax" : 2}, 
+"3" : {"exchangeID" : 3, "itemID" : 1004, "itemNum" : 2000, "honor" : 500, "lingli" : 5000, "buyMax" : 2}, 
+"4" : {"exchangeID" : 4, "itemID" : 1005, "itemNum" : 1650, "honor" : 1000, "lingli" : 5000, "buyMax" : 2}, 
+"5" : {"exchangeID" : 5, "itemID" : 1006, "itemNum" : 1500, "honor" : 1500, "lingli" : 5000, "buyMax" : 2}, 
+"6" : {"exchangeID" : 6, "itemID" : 1007, "itemNum" : 1200, "honor" : 2000, "lingli" : 5000, "buyMax" : 2}, 
+"7" : {"exchangeID" : 7, "itemID" : 1008, "itemNum" : 1000, "honor" : 2500, "lingli" : 5000, "buyMax" : 2}, 
+"8" : {"exchangeID" : 8, "itemID" : 7516, "itemNum" : 2, "honor" : 1000, "lingli" : 100000, "buyMax" : 2}, 
+"9" : {"exchangeID" : 9, "itemID" : 7519, "itemNum" : 1, "honor" : 1000, "lingli" : 500000, "buyMax" : 1}
+}

@@ -1,0 +1,8 @@
+{
+    "hosts": [
+        {
+            "host": "@tlogHost",
+            "port": "@tlogPort"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+"1001" : {"attID" : 1001, "minLevel" : 1, "maxLevel" : 1, "assetsID1" : 1301, "Num1" : 56, "assetsID2" : 0, "Num2" : 0}, 
+"1002" : {"attID" : 1002, "minLevel" : 2, "maxLevel" : 2, "assetsID1" : 1301, "Num1" : 28, "assetsID2" : 0, "Num2" : 0}, 
+"1003" : {"attID" : 1003, "minLevel" : 3, "maxLevel" : 3, "assetsID1" : 1301, "Num1" : 15, "assetsID2" : 0, "Num2" : 0}, 
+"1004" : {"attID" : 1004, "minLevel" : 4, "maxLevel" : 10, "assetsID1" : 1301, "Num1" : 10, "assetsID2" : 0, "Num2" : 0}, 
+"1005" : {"attID" : 1005, "minLevel" : 11, "maxLevel" : 100, "assetsID1" : 1301, "Num1" : 8, "assetsID2" : 0, "Num2" : 0}, 
+"1006" : {"attID" : 1006, "minLevel" : 101, "maxLevel" : 500, "assetsID1" : 1301, "Num1" : 6, "assetsID2" : 0, "Num2" : 0}, 
+"1007" : {"attID" : 1007, "minLevel" : 501, "maxLevel" : 1000, "assetsID1" : 1301, "Num1" : 4, "assetsID2" : 0, "Num2" : 0}, 
+"1008" : {"attID" : 1008, "minLevel" : 1001, "maxLevel" : 99999999, "assetsID1" : 1301, "Num1" : 2, "assetsID2" : 0, "Num2" : 0}
+}

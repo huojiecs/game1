@@ -1,0 +1,119 @@
+{
+    "cs": [
+        {
+            "id": 2,
+            "time": "* * * * * *",
+            "action": "csCron.ReplyPhysical",
+            "disableLog": true
+        },
+        {
+            "id": 3,
+            "time": "* * * * * *",
+            "action": "csCron.UpdateOperate",
+            "disableLog": true
+        },
+        {
+            "id": 4,
+            "time": "0 58 23 * * 0",
+            "action": "csCron.sendRewardOfClimbChart"
+        },
+        {
+            "id": 5,
+            "time": "0 59 23 * * 0",
+            "action": "csCron.sendRewardOfClimbSingleChart"
+        },
+        {
+            "id": 6,
+            "time": "0 00 24 * * 0",
+            "action": "csCron.initRoleClimbData"
+        },
+        {
+            "id": 8,
+            "time": "0 00 24 * * *",
+            "action": "csCron.Update12Info"
+        },
+        {
+            "id": 9,
+            "time": "0 00 24 * * 0",
+            "action": "csCron.UpdateWeeklyInfo"
+        }
+    ],
+    "ps": [
+        {
+            "id": 1,
+            "time": "59 * * * * *",
+            "action": "psCron.InsetOnlineNum",
+            "disableLog": true
+        }
+    ],
+    "chart": [
+        {
+            "id": 1,
+            "time": "0 05 00 * * *",
+            "action": "chartCron.countOfHonorReward"
+        },
+        {
+            "id": 2,
+            "time": "0 59 23 * * 0",
+            "action": "chartCron.sendRewardOfClimbSingleChart"
+        },
+        {
+            "id": 3,
+            "time": "0 00 24 * * 0",
+            "action": "chartCron.clearClimbScore"
+        },
+        {
+            "id": 4,
+            "time": "0 08 00 * * *",
+            "action": "chartCron.refreshChartReward"
+        },
+        {
+             "id": 5,
+             "time": "0 56 23 * * 0",
+             "action": "chartCron.refreshChartUnionScoreReward"
+         }
+    ],
+    "us": [
+        {
+            "id": 1,
+            "time": "0 00 24 * * *",
+            "action": "usCron.Update12Info"
+         },
+
+         {
+             "id": 2,
+             "time": "0 00 24 * * 0",
+             "action": "usCron.UpdateWeekInfo"
+        },
+        {
+             "id": 3,
+             "time": "0 00 24 * * 1",
+             "action": "usCron.UpdateFightInfo"
+        },
+        {
+             "id": 4,
+             "time": "0 00 21 * * 0",
+             "action": "usCron.OnCreateUnionFight"
+        }
+    ],
+     "pvp": [
+             {
+                 "id": 1,
+                 "time": "* * * * * *",
+                 "action": "pvpCron.OnCreateBossFight",
+                 "disableLog": true
+             },        
+             {
+                 "id": 2,
+                 "time": "0 00 24 * * *",
+                 "action": "pvpCron.Update12Info"
+             }
+     ],
+      "rs": [
+                 {
+                     "id": 1,
+                     "time": "0 00 24 * * *",
+                     "action": "rsCron.Update12Info"
+                  }
+             ]
+}

@@ -1,0 +1,11 @@
+{
+"1" : {"attID" : 1, "name" : 123, "infoNum" : 0, "infoID_0" : 0, "infoID_1" : 0, "infoID_2" : 0, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"2" : {"attID" : 2, "name" : 223, "infoNum" : 6, "infoID_0" : 2001, "infoID_1" : 2002, "infoID_2" : 2003, "infoID_3" : 2004, "infoID_4" : 2005, "infoID_5" : 2006, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"3" : {"attID" : 3, "name" : 323, "infoNum" : 3, "infoID_0" : 3001, "infoID_1" : 3002, "infoID_2" : 3003, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"4" : {"attID" : 4, "name" : 423, "infoNum" : 3, "infoID_0" : 4001, "infoID_1" : 4002, "infoID_2" : 4003, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"5" : {"attID" : 5, "name" : 523, "infoNum" : 3, "infoID_0" : 5001, "infoID_1" : 5002, "infoID_2" : 5003, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"6" : {"attID" : 6, "name" : 623, "infoNum" : 2, "infoID_0" : 6002, "infoID_1" : 6003, "infoID_2" : 0, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"7" : {"attID" : 7, "name" : 723, "infoNum" : 3, "infoID_0" : 7001, "infoID_1" : 7002, "infoID_2" : 7003, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"8" : {"attID" : 8, "name" : 823, "infoNum" : 3, "infoID_0" : 8001, "infoID_1" : 8002, "infoID_2" : 8003, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}, 
+"9" : {"attID" : 9, "name" : 923, "infoNum" : 2, "infoID_0" : 9001, "infoID_1" : 9002, "infoID_2" : 0, "infoID_3" : 0, "infoID_4" : 0, "infoID_5" : 0, "infoID_6" : 0, "infoID_7" : 0, "infoID_8" : 0, "infoID_9" : 0}
+}

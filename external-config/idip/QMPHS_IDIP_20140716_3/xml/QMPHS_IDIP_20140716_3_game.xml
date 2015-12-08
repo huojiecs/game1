@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--修订记录 
+ 2014-07-16 16:41:36 建立 
+ 版本：QMPHS_IDIP_20140716_3 
+
+-->
+<metalib name="QMPHS" version="3" urlencode="false" encoding="utf-8" encryption="false" proto="json" content_type="text/html" open_platform="false">
+  <command name="cmd" desc="IDIP前端协议">
+    <entry cmd="10084000" req="IDIP_QUERY_USER_INFO_REQ" rsp="IDIP_QUERY_USER_INFO_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#partition=Partition" rsp_value="source=Source#charac_name=RoleName#money=Money#level=Level#physical=Physical#diamond=Diamond#devil=Devil#max_ordinary_duplicate=MaxOrdinaryDuplicate#max_purgatory_duplicate=MaxPurgatoryDuplicate#devil_tower=DevilTower" desc="查询当前个人信息"/>
+    <entry cmd="10084001" req="IDIP_QUERY_ASSET_INFO_REQ" rsp="IDIP_QUERY_ASSET_INFO_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#partition=Partition" rsp_value="list=AssetList_count|AssetList|" desc="查询玩家财产信息"/>
+    <entry cmd="10084002" req="IDIP_QUERY_EQUIP_INFO_REQ" rsp="IDIP_QUERY_EQUIP_INFO_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#partition=Partition" rsp_value="list=EquipList_count|EquipList|" desc="查询玩家装备信息"/>
+    <entry cmd="10084003" req="IDIP_QUERY_BAN_INFO_REQ" rsp="IDIP_QUERY_BAN_INFO_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#partition=Partition" rsp_value="ban_time=BanTime#time=Time#unban_time=UnbanTime#ban_reason=BanReason" desc="查询玩家被封信息"/>
+    <entry cmd="10084004" req="IDIP_QUERY_ROLELIST_REQ" rsp="IDIP_QUERY_ROLELIST_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#partition=Partition" rsp_value="list=RoleList_count|RoleList|" desc="查询玩家角色列表"/>
+    <entry cmd="10084005" req="IDIP_DO_ACTIVE_USR_REQ" rsp="IDIP_DO_ACTIVE_USR_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="激活帐号"/>
+    <entry cmd="10084006" req="IDIP_DO_BAN_ROLE_REQ" rsp="IDIP_DO_BAN_ROLE_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#ban_time=BanTime#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="封号"/>
+    <entry cmd="10084007" req="IDIP_DO_UNBAN_ROLE_REQ" rsp="IDIP_DO_UNBAN_ROLE_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="解封"/>
+    <entry cmd="10084008" req="IDIP_DO_UPDATE_EXP_REQ" rsp="IDIP_DO_UPDATE_EXP_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#value=Value#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="修改角色经验"/>
+    <entry cmd="10084009" req="IDIP_DO_UPDATE_LEVEL_REQ" rsp="IDIP_DO_UPDATE_LEVEL_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#value=Value#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="修改角色等级"/>
+    <entry cmd="10084010" req="IDIP_DO_UPDATE_PHYSICAL_REQ" rsp="IDIP_DO_UPDATE_PHYSICAL_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#value=Value#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="修改玩家体力值"/>
+    <entry cmd="10084011" req="IDIP_DO_UPDATE_ASSET_REQ" rsp="IDIP_DO_UPDATE_ASSET_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#asset_id=AssetId#value=Value#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#asset_id=AssetId#begin_value=BeginValue#end_value=EndValue" desc="修改财产(非装备类)"/>
+    <entry cmd="10084012" req="IDIP_DO_SET_ASSET_REQ" rsp="IDIP_DO_SET_ASSET_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#asset_id=AssetId#value=Value#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#asset_id=AssetId#begin_value=BeginValue#end_value=EndValue" desc="设置财产(非装备类)"/>
+    <entry cmd="10084013" req="IDIP_DO_ADD_EQUIP_REQ" rsp="IDIP_DO_ADD_EQUIP_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#item_id=ItemId#item_num=ItemNum#stren_level=StrenLevel#star=Star#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="添加装备"/>
+    <entry cmd="10084014" req="IDIP_DO_DEL_EQUIP_REQ" rsp="IDIP_DO_DEL_EQUIP_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#item_id=ItemId#item_num=ItemNum#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="删除装备"/>
+    <entry cmd="10084015" req="IDIP_DO_SEND_MAIL_ITEM_REQ" rsp="IDIP_DO_SEND_MAIL_ITEM_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#mail_title=MailTitle#mail_content=MailContent#time=Time#source=Source#serial=Serial#list=MailItemList_count|MailItemList|#partition=Partition" rsp_value="result=Result#error_info=RetMsg" desc="发送系统邮件送物品"/>
+    <entry cmd="10084016" req="IDIP_DO_SEND_CLOSEAREA_NOTICE_REQ" rsp="IDIP_DO_SEND_CLOSEAREA_NOTICE_RSP" req_value="platid=PlatId#cycle=Cycle#title=NoticeTitle#content=NoticeContent#begin_time=BeginTime#end_time=EndTime#source=Source#serial=Serial" rsp_value="result=Result#error_info=RetMsg" desc="发送停服前通知"/>
+    <entry cmd="10084017" req="IDIP_DO_SEND_GAME_NOTICE_REQ" rsp="IDIP_DO_SEND_GAME_NOTICE_RSP" req_value="area=AreaId#platid=PlatId#type=Type#cycle=Cycle#url=Url#send_way=SendWay#title=NoticeTitle#content=NoticeContent#begin_time=BeginTime#end_time=EndTime#notice_type=NoticeType#source=Source#serial=Serial#partition=Partition" rsp_value="result=Result#notice_id=NoticeId#error_info=RetMsg" desc="发送游戏内公告"/>
+    <entry cmd="10084018" req="IDIP_DO_SEND_ROLLNOTICE_REQ" rsp="IDIP_DO_SEND_ROLLNOTICE_RSP" req_value="area=AreaId#platid=PlatId#content=NoticeContent#begin_time=BeginTime#end_time=EndTime#freq=Freq#speed=Speed#times=Times#source=Source#serial=Serial" rsp_value="result=Result#notice_id=NoticeId#error_info=RetMsg" desc="发送滚动公告"/>
+    <entry cmd="10084019" req="IDIP_QUERY_NOTICE_REQ" rsp="IDIP_QUERY_NOTICE_RSP" req_value="area=AreaId#platid=PlatId#type=Type#begin_time=BeginTime#end_time=EndTime#page_no=PageNo" rsp_value="list=NoticeList_count|NoticeList|" desc="查询公告"/>
+    <entry cmd="10084020" req="IDIP_DO_DEL_NOTICE_REQ" rsp="IDIP_DO_DEL_NOTICE_RSP" req_value="area=AreaId#platid=PlatId#type=Type#notice_id=NoticeId#source=Source#serial=Serial" rsp_value="result=Result#error_info=RetMsg" desc="删除公告"/>
+    <entry cmd="10084021" req="IDIP_DO_CLEAR_USRDATA_REQ" rsp="IDIP_DO_CLEAR_USRDATA_RSP" req_value="area=AreaId#platid=PlatId#openid=OpenId#charac_no=RoleId#reason=Reason#is_clear_progress=IsClearProgress#is_clear_money=IsClearMoney#is_clear_level=IsClearLevel#is_clear_asset=IsClearAsset#is_clear_item=IsClearItem#source=Source#serial=Serial" rsp_value="result=Result#error_info=RetMsg" desc="清除玩家数据"/>
+  </command>
+  <macrosgroup name="NET_CMD_ID" desc="IDIP命令编码">
+    <macro name="IDIP_QUERY_USER_INFO_REQ" value="0x1001" desc="查询当前个人信息请求"/>
+    <macro name="IDIP_QUERY_USER_INFO_RSP" value="0x1002" desc="查询当前个人信息应答"/>
+    <macro name="IDIP_QUERY_ASSET_INFO_REQ" value="0x1003" desc="查询玩家财产信息请求"/>
+    <macro name="IDIP_QUERY_ASSET_INFO_RSP" value="0x1004" desc="查询玩家财产信息应答"/>
+    <macro name="IDIP_QUERY_EQUIP_INFO_REQ" value="0x1005" desc="查询玩家装备信息请求"/>
+    <macro name="IDIP_QUERY_EQUIP_INFO_RSP" value="0x1006" desc="查询玩家装备信息应答"/>
+    <macro name="IDIP_QUERY_BAN_INFO_REQ" value="0x1007" desc="查询玩家被封信息请求"/>
+    <macro name="IDIP_QUERY_BAN_INFO_RSP" value="0x1008" desc="查询玩家被封信息应答"/>
+    <macro name="IDIP_QUERY_ROLELIST_REQ" value="0x1009" desc="查询玩家角色列表请求"/>
+    <macro name="IDIP_QUERY_ROLELIST_RSP" value="0x100a" desc="查询玩家角色列表应答"/>
+    <macro name="IDIP_DO_ACTIVE_USR_REQ" value="0x100b" desc="激活帐号请求"/>
+    <macro name="IDIP_DO_ACTIVE_USR_RSP" value="0x100c" desc="激活帐号应答"/>
+    <macro name="IDIP_DO_BAN_ROLE_REQ" value="0x100d" desc="封号请求"/>
+    <macro name="IDIP_DO_BAN_ROLE_RSP" value="0x100e" desc="封号应答"/>
+    <macro name="IDIP_DO_UNBAN_ROLE_REQ" value="0x100f" desc="解封请求"/>
+    <macro name="IDIP_DO_UNBAN_ROLE_RSP" value="0x1010" desc="解封应答"/>
+    <macro name="IDIP_DO_UPDATE_EXP_REQ" value="0x1011" desc="修改角色经验请求"/>
+    <macro name="IDIP_DO_UPDATE_EXP_RSP" value="0x1012" desc="修改角色经验应答"/>
+    <macro name="IDIP_DO_UPDATE_LEVEL_REQ" value="0x1013" desc="修改角色等级请求"/>
+    <macro name="IDIP_DO_UPDATE_LEVEL_RSP" value="0x1014" desc="修改角色等级应答"/>
+    <macro name="IDIP_DO_UPDATE_PHYSICAL_REQ" value="0x1015" desc="修改玩家体力值请求"/>
+    <macro name="IDIP_DO_UPDATE_PHYSICAL_RSP" value="0x1016" desc="修改玩家体力值应答"/>
+    <macro name="IDIP_DO_UPDATE_ASSET_REQ" value="0x1017" desc="修改财产(非装备类)请求"/>
+    <macro name="IDIP_DO_UPDATE_ASSET_RSP" value="0x1018" desc="修改财产(非装备类)应答"/>
+    <macro name="IDIP_DO_SET_ASSET_REQ" value="0x1019" desc="设置财产(非装备类)请求"/>
+    <macro name="IDIP_DO_SET_ASSET_RSP" value="0x101a" desc="设置财产(非装备类)应答"/>
+    <macro name="IDIP_DO_ADD_EQUIP_REQ" value="0x101b" desc="添加装备请求"/>
+    <macro name="IDIP_DO_ADD_EQUIP_RSP" value="0x101c" desc="添加装备应答"/>
+    <macro name="IDIP_DO_DEL_EQUIP_REQ" value="0x101d" desc="删除装备请求"/>
+    <macro name="IDIP_DO_DEL_EQUIP_RSP" value="0x101e" desc="删除装备应答"/>
+    <macro name="IDIP_DO_SEND_MAIL_ITEM_REQ" value="0x101f" desc="发送系统邮件送物品请求"/>
+    <macro name="IDIP_DO_SEND_MAIL_ITEM_RSP" value="0x1020" desc="发送系统邮件送物品应答"/>
+    <macro name="IDIP_DO_SEND_CLOSEAREA_NOTICE_REQ" value="0x1021" desc="发送停服前通知请求"/>
+    <macro name="IDIP_DO_SEND_CLOSEAREA_NOTICE_RSP" value="0x1022" desc="发送停服前通知应答"/>
+    <macro name="IDIP_DO_SEND_GAME_NOTICE_REQ" value="0x1023" desc="发送游戏内公告请求"/>
+    <macro name="IDIP_DO_SEND_GAME_NOTICE_RSP" value="0x1024" desc="发送游戏内公告应答"/>
+    <macro name="IDIP_DO_SEND_ROLLNOTICE_REQ" value="0x1025" desc="发送滚动公告请求"/>
+    <macro name="IDIP_DO_SEND_ROLLNOTICE_RSP" value="0x1026" desc="发送滚动公告应答"/>
+    <macro name="IDIP_QUERY_NOTICE_REQ" value="0x1027" desc="查询公告请求"/>
+    <macro name="IDIP_QUERY_NOTICE_RSP" value="0x1028" desc="查询公告应答"/>
+    <macro name="IDIP_DO_DEL_NOTICE_REQ" value="0x1029" desc="删除公告请求"/>
+    <macro name="IDIP_DO_DEL_NOTICE_RSP" value="0x102a" desc="删除公告应答"/>
+    <macro name="IDIP_DO_CLEAR_USRDATA_REQ" value="0x102b" desc="清除玩家数据请求"/>
+    <macro name="IDIP_DO_CLEAR_USRDATA_RSP" value="0x102c" desc="清除玩家数据应答"/>
+  </macrosgroup>
+  <macrosgroup name="NET_MACRO" desc="系统宏">
+    <macro name="MAX_OPENID_LEN" value="64" desc="openid的长度"/>
+    <macro name="MAX_ROLENAME_LEN" value="64" desc="角色名称的长度"/>
+    <macro name="MAX_MAILTITLE_LEN" value="72" desc="邮件标题的长度"/>
+    <macro name="MAX_EQUIPLIST_NUM" value="100" desc="装备信息列表的数组长度"/>
+    <macro name="MAX_BANREASON_LEN" value="128" desc="封号原因的长度"/>
+    <macro name="MAX_TITLE_LEN" value="64" desc="角色称号的长度"/>
+    <macro name="MAX_ROLELIST_NUM" value="50" desc="角色信息列表的数组长度"/>
+    <macro name="MAX_SERIAL_LEN" value="64" desc="流水号，由前端生成，不需要填写的长度"/>
+    <macro name="MAX_RETMSG_LEN" value="100" desc="返回消息的长度"/>
+    <macro name="MAX_ASSETLIST_NUM" value="100" desc="财产信息列表的数组长度"/>
+    <macro name="MAX_MAILCONTENT_LEN" value="3000" desc="邮件内容的长度"/>
+    <macro name="MAX_NOTICETITLE_LEN" value="72" desc="公告标题的长度"/>
+    <macro name="MAX_NOTICECONTENT_LEN" value="3000" desc="公告内容的长度"/>
+    <macro name="MAX_URL_LEN" value="512" desc="跳转url（0表示无）的长度"/>
+    <macro name="MAX_NOTICELIST_NUM" value="7" desc="公告信息列表的数组长度"/>
+    <macro name="MAX_REASON_LEN" value="64" desc="操作原因的长度"/>
+    <macro name="MAX_MAILITEMLIST_NUM" value="50" desc="邮件物品信息列表的数组长度"/>
+    <macro name="SERVICE_NAME_LENGTH" value="16" desc="SERVICENAME的最大长度"/>
+    <macro name="AUTHENTICATE_LENGTH" value="32" desc="加密串的最大长度"/>
+    <macro name="ERROR_MSG_LENGTH" value="100" desc="错误码"/>
+    <macro name="IDIP_BODY_LENGTH" value="24000" desc="封装包包体的最大值, 基本的数据包的大小在15K以下，只有查询邮件列表这个数据量比较大，在23K左右"/>
+  </macrosgroup>
+  <struct name="IdipHeader" desc="IDIP消息头">
+    <entry name="PacketLen" type="uint32" desc="包长"/>
+    <entry name="Cmdid" type="uint32" desc="命令ID"/>
+    <entry name="Seqid" type="uint32" desc="流水号"/>
+    <entry name="ServiceName" type="string" size="SERVICE_NAME_LENGTH" desc="服务名"/>
+    <entry name="SendTime" type="uint32" desc="发送时间YYYYMMDD对应的整数"/>
+    <entry name="Version" type="uint32" desc="版本号"/>
+    <entry name="Authenticate" type="string" size="AUTHENTICATE_LENGTH" desc="加密串"/>
+    <entry name="Result" type="int32" desc="错误码,返回码类型：0：处理成功，需要解开包体获得详细信息,1：处理成功，但包体返回为空，不需要处理包体（eg：查询用户角色，用户角色不存在等），-1: 网络通信异常,-2：超时,-3：数据库操作异常,-4：API返回异常,-5：服务器忙,-6：其他错误,小于-100 ：用户自定义错误，需要填写szRetErrMsg"/>
+    <entry name="RetErrMsg" type="string" size="ERROR_MSG_LENGTH" desc="错误信息"/>
+  </struct>
+  <struct name="IdipDataPaket" desc="IDIP数据包">
+    <entry name="IdipHead" type="IdipHeader" desc="包头信息"/>
+    <entry name="IdipBody" type="string" size="IDIP_BODY_LENGTH" desc="包体信息"/>
+  </struct>
+  <!--装备信息对象-->
+  <struct name="SEquipInfo" desc="装备信息对象">
+    <entry name="EquipId" type="uint64" desc="装备ID" test="1"/>
+    <entry name="StrenLevel" type="uint32" desc="装备强化等级" test="2"/>
+    <entry name="GainTime" type="uint64" desc="获取时间" test="1405477624"/>
+  </struct>
+  <!--角色信息对象-->
+  <struct name="SRoleInfo" desc="角色信息对象">
+    <entry name="RoleId" type="uint64" desc="角色ID" test="1"/>
+    <entry name="Level" type="uint32" desc="角色等级" test="2"/>
+    <entry name="RoleName" type="string" size="MAX_ROLENAME_LEN" desc="角色名" test="viken"/>
+    <entry name="Title" type="string" size="MAX_TITLE_LEN" desc="角色称号" test="test"/>
+    <entry name="DevilNum" type="uint32" desc="邪神开启数量" test="3"/>
+    <entry name="DevilLevel" type="uint32" desc="各邪神等级" test="4"/>
+    <entry name="DevilSkillLevel" type="uint32" desc="邪神各技能等级" test="5"/>
+  </struct>
+  <!--财产信息对象-->
+  <struct name="SAssetInfo" desc="财产信息对象">
+    <entry name="AssetId" type="uint64" desc="财产ID" test="1"/>
+    <entry name="Num" type="uint32" desc="财产数量" test="2"/>
+  </struct>
+  <!--公告信息对象-->
+  <struct name="SNoticeInfo" desc="公告信息对象">
+    <entry name="Type" type="uint8" desc="公告类型" test="1"/>
+    <entry name="NoticeId" type="uint64" desc="公告ID" test="1"/>
+    <entry name="NoticeTitle" type="string" size="MAX_NOTICETITLE_LEN" desc="公告标题" test="test"/>
+    <entry name="NoticeContent" type="string" size="MAX_NOTICECONTENT_LEN" desc="公告内容" test="test2"/>
+    <entry name="PageNo" type="uint8" desc="页码" test="1"/>
+    <entry name="PageNum" type="uint8" desc="总页数" test="2"/>
+  </struct>
+  <!--邮件物品信息对象-->
+  <struct name="SMailItemInfo" desc="邮件物品信息对象">
+    <entry name="ItemId" type="uint64" desc="物品ID" test="1"/>
+    <entry name="ItemNum" type="uint32" desc="物品数量" test="2"/>
+  </struct>
+  <!--查询当前个人信息请求-->
+  <struct name="QueryUserInfoReq" id="IDIP_QUERY_USER_INFO_REQ" desc="查询当前个人信息请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="3"/>
+  </struct>
+  <!--查询当前个人信息应答-->
+  <struct name="QueryUserInfoRsp" id="IDIP_QUERY_USER_INFO_RSP" desc="查询当前个人信息应答">
+    <entry name="Source" type="uint32" desc="角色注册渠道（1 微信、 2 手Q、 3 QQ游戏、4 应用宝、5QQ空间  6 其他）" test="1"/>
+    <entry name="RoleName" type="string" size="MAX_ROLENAME_LEN" desc="角色名称" test="viken"/>
+    <entry name="Money" type="uint32" desc="当前金币" test="2"/>
+    <entry name="Level" type="uint32" desc="当前等级" test="3"/>
+    <entry name="Physical" type="uint32" desc="当前体力值" test="4"/>
+    <entry name="Diamond" type="uint32" desc="当前钻石数" test="5"/>
+    <entry name="Devil" type="uint32" desc="当前魔灵" test="6"/>
+    <entry name="MaxOrdinaryDuplicate" type="uint32" desc="当前通关最高普通副本" test="7"/>
+    <entry name="MaxPurgatoryDuplicate" type="uint32" desc="当前通关最高炼狱副本" test="8"/>
+    <entry name="DevilTower" type="uint32" desc="当前通关万魔塔层数" test="9"/>
+  </struct>
+  <!--查询玩家财产信息请求-->
+  <struct name="QueryAssetInfoReq" id="IDIP_QUERY_ASSET_INFO_REQ" desc="查询玩家财产信息请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+  </struct>
+  <!--查询玩家财产信息应答-->
+  <struct name="QueryAssetInfoRsp" id="IDIP_QUERY_ASSET_INFO_RSP" desc="查询玩家财产信息应答">
+    <entry name="AssetList_count" type="uint32" desc="财产信息列表的最大数量" test="1"/>
+    <entry name="AssetList" type="SAssetInfo" size="MAX_ASSETLIST_NUM" param="vector,struct,AssetList_count,1,|, " desc="财产信息列表"/>
+  </struct>
+  <!--查询玩家装备信息请求-->
+  <struct name="QueryEquipInfoReq" id="IDIP_QUERY_EQUIP_INFO_REQ" desc="查询玩家装备信息请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+  </struct>
+  <!--查询玩家装备信息应答-->
+  <struct name="QueryEquipInfoRsp" id="IDIP_QUERY_EQUIP_INFO_RSP" desc="查询玩家装备信息应答">
+    <entry name="EquipList_count" type="uint32" desc="装备信息列表的最大数量" test="1"/>
+    <entry name="EquipList" type="SEquipInfo" size="MAX_EQUIPLIST_NUM" param="vector,struct,EquipList_count,1,|, " desc="装备信息列表" test="0"/>
+  </struct>
+  <!--查询玩家被封信息请求-->
+  <struct name="QueryBanInfoReq" id="IDIP_QUERY_BAN_INFO_REQ" desc="查询玩家被封信息请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+  </struct>
+  <!--查询玩家被封信息应答-->
+  <struct name="QueryBanInfoRsp" id="IDIP_QUERY_BAN_INFO_RSP" desc="查询玩家被封信息应答">
+    <entry name="BanTime" type="uint64" desc="封号时间点" test="1405477731"/>
+    <entry name="Time" type="uint32" desc="被封时长" test="1"/>
+    <entry name="UnbanTime" type="uint64" desc="解封时间" test="1405477751"/>
+    <entry name="BanReason" type="string" size="MAX_BANREASON_LEN" desc="封号原因" test="test"/>
+  </struct>
+  <!--查询玩家角色列表请求-->
+  <struct name="QueryRolelistReq" id="IDIP_QUERY_ROLELIST_REQ" desc="查询玩家角色列表请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+  </struct>
+  <!--查询玩家角色列表应答-->
+  <struct name="QueryRolelistRsp" id="IDIP_QUERY_ROLELIST_RSP" desc="查询玩家角色列表应答">
+    <entry name="RoleList_count" type="uint32" desc="角色信息列表的最大数量" test="1"/>
+    <entry name="RoleList" type="SRoleInfo" size="MAX_ROLELIST_NUM" param="vector,struct,RoleList_count,1,|, " desc="角色信息列表" test="0"/>
+  </struct>
+  <!--激活帐号请求-->
+  <struct name="DoActiveUsrReq" id="IDIP_DO_ACTIVE_USR_REQ" desc="激活帐号请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--激活帐号应答-->
+  <struct name="DoActiveUsrRsp" id="IDIP_DO_ACTIVE_USR_RSP" desc="激活帐号应答">
+    <entry name="Result" type="int32" desc="结果: 0 激活成功；1 帐号曾经激活；其它失败" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--封号请求-->
+  <struct name="DoBanRoleReq" id="IDIP_DO_BAN_ROLE_REQ" desc="封号请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="BanTime" type="int32" desc="封号时长：*秒（*为大于0的完整数字），-1为永久" test="3"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--封号应答-->
+  <struct name="DoBanRoleRsp" id="IDIP_DO_BAN_ROLE_RSP" desc="封号应答">
+    <entry name="Result" type="int32" desc="结果：（0）成功，（其他）失败" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--解封请求-->
+  <struct name="DoUnbanRoleReq" id="IDIP_DO_UNBAN_ROLE_REQ" desc="解封请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--解封应答-->
+  <struct name="DoUnbanRoleRsp" id="IDIP_DO_UNBAN_ROLE_RSP" desc="解封应答">
+    <entry name="Result" type="int32" desc="结果：（0）成功，（其他）失败" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--修改角色经验请求-->
+  <struct name="DoUpdateExpReq" id="IDIP_DO_UPDATE_EXP_REQ" desc="修改角色经验请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="Value" type="int32" desc="数量（正加负减）" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--修改角色经验应答-->
+  <struct name="DoUpdateExpRsp" id="IDIP_DO_UPDATE_EXP_RSP" desc="修改角色经验应答">
+    <entry name="Result" type="int32" desc="结果（0）成功" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--修改角色等级请求-->
+  <struct name="DoUpdateLevelReq" id="IDIP_DO_UPDATE_LEVEL_REQ" desc="修改角色等级请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="Value" type="int32" desc="数量（正加负减）" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--修改角色等级应答-->
+  <struct name="DoUpdateLevelRsp" id="IDIP_DO_UPDATE_LEVEL_RSP" desc="修改角色等级应答">
+    <entry name="Result" type="int32" desc="结果（0）成功" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--修改玩家体力值请求-->
+  <struct name="DoUpdatePhysicalReq" id="IDIP_DO_UPDATE_PHYSICAL_REQ" desc="修改玩家体力值请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="Value" type="int32" desc="数量（正加负减）" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--修改玩家体力值应答-->
+  <struct name="DoUpdatePhysicalRsp" id="IDIP_DO_UPDATE_PHYSICAL_RSP" desc="修改玩家体力值应答">
+    <entry name="Result" type="int32" desc="结果（0）成功" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--修改财产(非装备类)请求-->
+  <struct name="DoUpdateAssetReq" id="IDIP_DO_UPDATE_ASSET_REQ" desc="修改财产(非装备类)请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="AssetId" type="uint64" desc="财产ID" test="3"/>
+    <entry name="Value" type="int32" desc="修改数量：-减，+加" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--修改财产(非装备类)应答-->
+  <struct name="DoUpdateAssetRsp" id="IDIP_DO_UPDATE_ASSET_RSP" desc="修改财产(非装备类)应答">
+    <entry name="Result" type="int32" desc="结果（0）成功" test="0"/>
+    <entry name="AssetId" type="uint64" desc="财产ID" test="2"/>
+    <entry name="BeginValue" type="uint32" desc="修改前数量" test="1"/>
+    <entry name="EndValue" type="uint32" desc="修改后数量" test="2"/>
+  </struct>
+  <!--设置财产(非装备类)请求-->
+  <struct name="DoSetAssetReq" id="IDIP_DO_SET_ASSET_REQ" desc="设置财产(非装备类)请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="AssetId" type="uint64" desc="财产ID" test="3"/>
+    <entry name="Value" type="int32" desc="设置期望数量" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--设置财产(非装备类)应答-->
+  <struct name="DoSetAssetRsp" id="IDIP_DO_SET_ASSET_RSP" desc="设置财产(非装备类)应答">
+    <entry name="Result" type="int32" desc="结果（0）成功" test="0"/>
+    <entry name="AssetId" type="uint64" desc="财产ID" test="1"/>
+    <entry name="BeginValue" type="uint32" desc="设置前数量" test="2"/>
+    <entry name="EndValue" type="uint32" desc="设置后数量" test="3"/>
+  </struct>
+  <!--添加装备请求-->
+  <struct name="DoAddEquipReq" id="IDIP_DO_ADD_EQUIP_REQ" desc="添加装备请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="ItemId" type="uint64" desc="装备ID" test="3"/>
+    <entry name="ItemNum" type="uint32" desc="装备数量" test="4"/>
+    <entry name="StrenLevel" type="uint32" desc="装备强化等级" test="5"/>
+    <entry name="Star" type="uint32" desc="装备星级: 0表示随机" test="6"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--添加装备应答-->
+  <struct name="DoAddEquipRsp" id="IDIP_DO_ADD_EQUIP_RSP" desc="添加装备应答">
+    <entry name="Result" type="int32" desc="结果（0）成功、其他失败" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--删除装备请求-->
+  <struct name="DoDelEquipReq" id="IDIP_DO_DEL_EQUIP_REQ" desc="删除装备请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="ItemId" type="uint64" desc="装备ID" test="3"/>
+    <entry name="ItemNum" type="int32" desc="装备数量: （-1，表全部删除）" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--删除装备应答-->
+  <struct name="DoDelEquipRsp" id="IDIP_DO_DEL_EQUIP_RSP" desc="删除装备应答">
+    <entry name="Result" type="int32" desc="结果（0）成功、其他失败" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--发送系统邮件送物品请求-->
+  <struct name="DoSendMailItemReq" id="IDIP_DO_SEND_MAIL_ITEM_REQ" desc="发送系统邮件送物品请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="MailTitle" type="string" size="MAX_MAILTITLE_LEN" desc="邮件标题" test="test2"/>
+    <entry name="MailContent" type="string" size="MAX_MAILCONTENT_LEN" desc="邮件内容" test="test3"/>
+    <entry name="MailItemList_count" type="uint32" desc="邮件物品信息列表的最大数量" test="1"/>
+    <entry name="MailItemList" type="SMailItemInfo" size="MAX_MAILITEMLIST_NUM" param="vector,struct,MailItemList_count,1,|, " desc="邮件物品信息列表"/>
+    <entry name="Time" type="uint64" desc="生效时间" test="1404802758"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--发送系统邮件送物品应答-->
+  <struct name="DoSendMailItemRsp" id="IDIP_DO_SEND_MAIL_ITEM_RSP" desc="发送系统邮件送物品应答">
+    <entry name="Result" type="int32" desc="结果（0）成功" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--发送停服前通知请求-->
+  <struct name="DoSendCloseareaNoticeReq" id="IDIP_DO_SEND_CLOSEAREA_NOTICE_REQ" desc="发送停服前通知请求">
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="Cycle" type="uint8" desc="弹出周期：打开APP，读取logo后弹出" test="1"/>
+    <entry name="NoticeTitle" type="string" size="MAX_NOTICETITLE_LEN" desc="公告标题" test="test"/>
+    <entry name="NoticeContent" type="string" size="MAX_NOTICECONTENT_LEN" desc="公告内容" test="test2"/>
+    <entry name="BeginTime" type="uint64" desc="开始时间" test="1394173177"/>
+    <entry name="EndTime" type="uint64" desc="结束时间：不配置，则表示不限制结束时间" test="1394173208"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--发送停服前通知应答-->
+  <struct name="DoSendCloseareaNoticeRsp" id="IDIP_DO_SEND_CLOSEAREA_NOTICE_RSP" desc="发送停服前通知应答">
+    <entry name="Result" type="int32" desc="结果" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--发送游戏内公告请求-->
+  <struct name="DoSendGameNoticeReq" id="IDIP_DO_SEND_GAME_NOTICE_REQ" desc="发送游戏内公告请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="Partition" type="uint32" desc="分区：INT 服务器Id, 如果填0表示全区" test="2"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="Type" type="uint8" desc="内容类型：文本（0），图片（1）" test="1"/>
+    <entry name="Cycle" type="uint8" desc="弹出周期：1每日首次登录后弹出，2每日登录后弹出，3进入游戏主界面后弹出" test="3"/>
+    <entry name="Url" type="string" size="MAX_URL_LEN" desc="跳转url（0表示无）" test="4"/>
+    <entry name="SendWay" type="uint8" desc="发送方式：公告、邮件、Both" test="3"/>
+    <entry name="NoticeTitle" type="string" size="MAX_NOTICETITLE_LEN" desc="公告标题" test="test"/>
+    <entry name="NoticeContent" type="string" size="MAX_NOTICECONTENT_LEN" desc="公告内容" test="test2"/>
+    <entry name="BeginTime" type="uint64" desc="开始时间" test="1394173177"/>
+    <entry name="EndTime" type="uint64" desc="结束时间：不配置，则表示不限制结束时间    " test="1394173208"/>
+    <entry name="NoticeType" type="uint8" desc="公告类型：1 弹窗公告，2滚动公告" test="1"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--发送游戏内公告应答-->
+  <struct name="DoSendGameNoticeRsp" id="IDIP_DO_SEND_GAME_NOTICE_RSP" desc="发送游戏内公告应答">
+    <entry name="NoticeId" type="uint64" desc="公告ID" test="1"/>
+    <entry name="Result" type="int32" desc="结果" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--发送滚动公告请求-->
+  <struct name="DoSendRollnoticeReq" id="IDIP_DO_SEND_ROLLNOTICE_REQ" desc="发送滚动公告请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="NoticeContent" type="string" size="MAX_NOTICECONTENT_LEN" desc="公告内容" test="test2"/>
+    <entry name="BeginTime" type="uint64" desc="开始时间" test="1394173177"/>
+    <entry name="EndTime" type="uint64" desc="结束时间" test="1394173208"/>
+    <entry name="Freq" type="uint32" desc="滚动频率" test="2"/>
+    <entry name="Speed" type="uint32" desc="滚动速度" test="3"/>
+    <entry name="Times" type="uint32" desc="滚动次数限制：0表示不限制次数" test="4"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--发送滚动公告应答-->
+  <struct name="DoSendRollnoticeRsp" id="IDIP_DO_SEND_ROLLNOTICE_RSP" desc="发送滚动公告应答">
+    <entry name="NoticeId" type="uint64" desc="公告ID" test="1"/>
+    <entry name="Result" type="int32" desc="结果" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--查询公告请求-->
+  <struct name="QueryNoticeReq" id="IDIP_QUERY_NOTICE_REQ" desc="查询公告请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="Type" type="uint8" desc="公告类型：1 弹窗公告，2滚动公告，3停服通知 " test="2"/>
+    <entry name="BeginTime" type="uint64" desc="开始时间" test="1394173563"/>
+    <entry name="EndTime" type="uint64" desc="结束时间" test="1394173573"/>
+    <entry name="PageNo" type="uint8" desc="页码" test="0"/>
+  </struct>
+  <!--查询公告应答-->
+  <struct name="QueryNoticeRsp" id="IDIP_QUERY_NOTICE_RSP" desc="查询公告应答">
+    <entry name="NoticeList_count" type="uint32" desc="公告信息列表的最大数量" test="1"/>
+    <entry name="NoticeList" type="SNoticeInfo" size="MAX_NOTICELIST_NUM" param="vector,struct,NoticeList_count,1,|, " desc="公告信息列表"/>
+  </struct>
+  <!--删除公告请求-->
+  <struct name="DoDelNoticeReq" id="IDIP_DO_DEL_NOTICE_REQ" desc="删除公告请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="Type" type="uint8" desc="公告类型：1 弹窗公告，2滚动公告，3停服通知  " test="2"/>
+    <entry name="NoticeId" type="uint64" desc="公告ID" test="2"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需填写"/>
+  </struct>
+  <!--删除公告应答-->
+  <struct name="DoDelNoticeRsp" id="IDIP_DO_DEL_NOTICE_RSP" desc="删除公告应答">
+    <entry name="Result" type="int32" desc="结果：0 成功，其它失败" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+  <!--清除玩家数据请求-->
+  <struct name="DoClearUsrdataReq" id="IDIP_DO_CLEAR_USRDATA_REQ" desc="清除玩家数据请求">
+    <entry name="AreaId" type="uint32" desc="服务器：微信（1），手Q（2）" test="1"/>
+    <entry name="PlatId" type="uint8" desc="平台：IOS（0），安卓（1），全部（2）" test="0"/>
+    <entry name="OpenId" type="string" size="MAX_OPENID_LEN" desc="openid" test="732945400"/>
+    <entry name="RoleId" type="uint64" desc="角色ID" test="2"/>
+    <entry name="Reason" type="string" size="MAX_REASON_LEN" desc="操作原因" test="3"/>
+    <entry name="IsClearProgress" type="uint8" desc="进度清除（1是，0否）" test="1"/>
+    <entry name="IsClearMoney" type="uint8" desc="金币清除（1是，0否）" test="0"/>
+    <entry name="IsClearLevel" type="uint8" desc="角色等级清除（1是，0否）" test="1"/>
+    <entry name="IsClearAsset" type="uint8" desc="财产清除（1是，0否）" test="0"/>
+    <entry name="IsClearItem" type="uint8" desc="物品清除（1是，0否）" test="1"/>
+    <entry name="Source" type="uint32" desc="渠道号，由前端生成，不需要填写"/>
+    <entry name="Serial" type="string" size="MAX_SERIAL_LEN" desc="流水号，由前端生成，不需要填写"/>
+  </struct>
+  <!--清除玩家数据应答-->
+  <struct name="DoClearUsrdataRsp" id="IDIP_DO_CLEAR_USRDATA_RSP" desc="清除玩家数据应答">
+    <entry name="Result" type="int32" desc="结果" test="0"/>
+    <entry name="RetMsg" type="string" size="MAX_RETMSG_LEN" desc="返回消息" test="success"/>
+  </struct>
+</metalib>

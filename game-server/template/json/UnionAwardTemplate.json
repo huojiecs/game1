@@ -1,0 +1,5 @@
+{
+"1001" : {"attID" : 1001, "attType" : 1, "itemID1" : 1002, "itemNum1" : 400, "itemID2" : 610104, "itemNum2" : 1, "itemID3" : 0, "itemNum3" : 0, "itemID4" : 0, "itemNum4" : 0, "leaderItemID1" : 611104, "leaderItemNum1" : 1, "leaderItemID2" : 0, "leaderItemNum2" : 0}, 
+"1002" : {"attID" : 1002, "attType" : 2, "itemID1" : 1002, "itemNum1" : 20, "itemID2" : 1001, "itemNum2" : 100000, "itemID3" : 1501, "itemNum3" : 100, "itemID4" : 0, "itemNum4" : 0, "leaderItemID1" : 0, "leaderItemNum1" : 0, "leaderItemID2" : 0, "leaderItemNum2" : 0}, 
+"1003" : {"attID" : 1003, "attType" : 3, "itemID1" : 1001, "itemNum1" : 20000, "itemID2" : 9021, "itemNum2" : 4, "itemID3" : 1002, "itemNum3" : 40, "itemID4" : 0, "itemNum4" : 0, "leaderItemID1" : 0, "leaderItemNum1" : 0, "leaderItemID2" : 0, "leaderItemNum2" : 0}
+}

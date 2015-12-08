@@ -1,0 +1,61 @@
+{
+    "appenders": [
+        {
+            "type": "console",
+            "layout": {
+                "type": "%d{DATE} %-4r [%t] %-5p %c %x - %m%n"
+            }
+        },
+        {
+            "type": "file",
+            "filename": "./logs/game-robot.log",
+            "fileSize": 1048576,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5
+        },
+        {
+            "type": "logLevelFilter",
+            "level": "WARN",
+            "appender": {
+                "type": "file",
+                "filename": "./logs/game-query.log",
+                "fileSize": 1048576,
+                "layout": {
+                    "type": "basic"
+                },
+                "backups": 5,
+                "category": "query"
+            }
+        }
+    ],
+
+    "levels": {
+        "console": "ERROR",
+        "module": "ERROR",
+        "pomelo": "ERROR",
+        "utils": "ERROR",
+        "chat": "INFO",
+        "bianshen": "ERROR",
+        "client": "INFO",
+        "equipitem": "ERROR",
+        "friend": "DEBUG",
+
+        "chart": "INFO",
+        "room": "INFO",
+        "item": "INFO",
+        "mission": "ERROR",
+        "cs_player": "ERROR",
+        "climb": "ERROR",
+        "activity": "ERROR",
+        "cs_shop": "ERROR",
+        "cs_room": "ERROR"
+    },
+
+    "reloadSecs": 10,
+
+    "lineDebug": true,
+
+    "replaceConsole": true
+}

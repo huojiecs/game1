@@ -1,0 +1,16 @@
+{
+"101" : {"attID" : 101, "type" : 0, "skillID_0" : 100101, "skillID_1" : 100201, "skillID_2" : 100301, "skillID_3" : 100401, "profession" : 0}, 
+"102" : {"attID" : 102, "type" : 0, "skillID_0" : 100101, "skillID_1" : 100201, "skillID_2" : 100501, "skillID_3" : 100601, "profession" : 0}, 
+"201" : {"attID" : 201, "type" : 3, "skillID_0" : 600101, "skillID_1" : 600201, "skillID_2" : 600301, "skillID_3" : 0, "profession" : 11}, 
+"202" : {"attID" : 202, "type" : 4, "skillID_0" : 600401, "skillID_1" : 600501, "skillID_2" : 600601, "skillID_3" : 0, "profession" : 11}, 
+"203" : {"attID" : 203, "type" : 5, "skillID_0" : 600701, "skillID_1" : 600801, "skillID_2" : 600901, "skillID_3" : 0, "profession" : 11}, 
+"204" : {"attID" : 204, "type" : 6, "skillID_0" : 601001, "skillID_1" : 601101, "skillID_2" : 601201, "skillID_3" : 0, "profession" : 11}, 
+"205" : {"attID" : 205, "type" : 7, "skillID_0" : 601301, "skillID_1" : 601401, "skillID_2" : 601501, "skillID_3" : 0, "profession" : 11}, 
+"206" : {"attID" : 206, "type" : 1, "skillID_0" : 800501, "skillID_1" : 0, "skillID_2" : 0, "skillID_3" : 0, "profession" : 11}, 
+"301" : {"attID" : 301, "type" : 0, "skillID_0" : 200101, "skillID_1" : 200201, "skillID_2" : 200301, "skillID_3" : 200401, "profession" : 1}, 
+"302" : {"attID" : 302, "type" : 0, "skillID_0" : 200101, "skillID_1" : 200201, "skillID_2" : 200501, "skillID_3" : 200601, "profession" : 1}, 
+"401" : {"attID" : 401, "type" : 0, "skillID_0" : 300101, "skillID_1" : 300201, "skillID_2" : 300301, "skillID_3" : 300401, "profession" : 2}, 
+"402" : {"attID" : 402, "type" : 0, "skillID_0" : 300101, "skillID_1" : 300201, "skillID_2" : 300501, "skillID_3" : 300601, "profession" : 2}, 
+"501" : {"attID" : 501, "type" : 0, "skillID_0" : 1000101, "skillID_1" : 1000201, "skillID_2" : 1000301, "skillID_3" : 1000401, "profession" : 3}, 
+"502" : {"attID" : 502, "type" : 0, "skillID_0" : 1000501, "skillID_1" : 1000601, "skillID_2" : 1000701, "skillID_3" : 1000801, "profession" : 3}
+}

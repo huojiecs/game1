@@ -1,0 +1,5 @@
+{
+    "id": "api-master-server",
+    "host": "@outerHost",
+    "port": 26099
+}

@@ -1,0 +1,5 @@
+{
+    "id": "master-server-1",
+    "host": "@outerHost",
+    "port": 26090
+}

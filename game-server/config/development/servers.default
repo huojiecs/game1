@@ -1,0 +1,201 @@
+{
+    "connector": [
+        {
+            "args": "--debug=56011",
+            "id": "ls-connector-server-1",
+            "host": "@outerHost",
+            "port": 26011,
+            "clientPort": 26001,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26001
+        },
+        {
+            "args": "--debug=56012",
+            "id": "ls-connector-server-2",
+            "host": "@outerHost",
+            "port": 26012,
+            "clientPort": 26002,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26002
+        },
+        {
+            "args": "--debug=56031",
+            "id": "connector-server-1",
+            "host": "@outerHost",
+            "port": 26031,
+            "clientPort": 26021,
+            "frontend": true,
+            "dedicateDispatcher": true,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26021
+        },
+        {
+            "args": "--debug=56032",
+            "id": "connector-server-2",
+            "host": "@outerHost",
+            "port": 26032,
+            "clientPort": 26022,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "game",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26022
+        }
+    ],
+    "ps": [
+        {
+            "args": "--debug=56050",
+            "id": "ps-server-1",
+            "host": "127.0.0.1",
+            "port": 26050
+        }
+    ],
+    "psIdip": [
+        {
+            "id": "psIdip-server-1",
+            "host": "127.0.0.1",
+            "port": 26251
+        },
+        {
+            "id": "psIdip-server-2",
+            "host": "127.0.0.1",
+            "port": 26252
+        }
+    ],
+    "chat": [
+        {
+            "args": "--debug=56051",
+            "id": "chat-server-1",
+            "host": "127.0.0.1",
+            "port": 26051
+        }
+    ],
+    "rs": [
+        {
+            "args": "--debug=56052",
+            "id": "rs-server-1",
+            "host": "127.0.0.1",
+            "port": 26052
+        }
+    ],
+    "pvp": [
+        {
+            "args": "--debug=56053",
+            "id": "pvp-server-1",
+            "host": "127.0.0.1",
+            "port": 26053
+        }
+    ],
+    "fs": [
+        {
+            "args": "--debug=56054",
+            "id": "fs-server-1",
+            "host": "127.0.0.1",
+            "port": 26054
+        }
+    ],
+    "ms": [
+        {
+            "args": "--debug=56400",
+            "id": "ms-server-1",
+            "host": "127.0.0.1",
+            "port": 26055
+        }
+    ],
+    "chart": [
+        {
+            "args": "--debug=56056",
+            "id": "chart-server-1",
+            "host": "127.0.0.1",
+            "port": 26056
+        }
+    ],
+    "us": [
+        {
+            "args": "--debug=56082",
+            "id": "us-server-1",
+            "host": "127.0.0.1",
+            "port": 26060
+        }
+    ],
+    "idip": [
+        {
+            "args": "--debug=56057",
+            "id": "idip-game-server-1",
+            "host": "127.0.0.1",
+            "port": 26057
+        },
+        {
+            "args": "--debug=56058",
+            "id": "idip-ls-server-1",
+            "host": "127.0.0.1",
+            "port": 26058
+        },
+        {
+            "args": "--debug=56059",
+            "id": "idip-global-server-1",
+            "host": "127.0.0.1",
+            "port": 26059
+        }
+    ],
+    "ls": [
+        {
+            "args": "--debug=56061",
+            "id": "ls-server-1",
+            "host": "127.0.0.1",
+            "port": 26061
+        },
+        {
+            "id": "ls-server-2",
+            "host": "127.0.0.1",
+            "port": 26062
+        },
+        {
+            "id": "ls-server-3",
+            "host": "127.0.0.1",
+            "port": 26063
+        }
+    ],
+    "lsIdip": [
+        {
+            "id": "lsIdip-server-1",
+            "host": "127.0.0.1",
+            "port": 26151
+        },
+        {
+            "id": "lsIdip-server-2",
+            "host": "127.0.0.1",
+            "port": 26152
+        }
+    ],
+    "js": [
+        {
+            "id": "js-server-1",
+            "host": "127.0.0.1",
+            "port": 26071
+        }
+    ],
+    "cs": [
+        {
+            "args": "--debug=56041",
+            "id": "cs-server-1",
+            "host": "127.0.0.1",
+            "port": 26041
+        }
+    ],
+    "dbcache": [
+        {
+            "args": "--debug=56081",
+            "id": "dbcache-server-1",
+            "host": "127.0.0.1",
+            "port": 26081
+        }
+    ]
+}

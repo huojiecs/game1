@@ -1,0 +1,5 @@
+{
+"100010" : {"weddingID" : 100010, "beginTime" : 9, "longTime" : 30, "weddingNum" : 10}, 
+"100011" : {"weddingID" : 100011, "beginTime" : 13, "longTime" : 30, "weddingNum" : 10}, 
+"100012" : {"weddingID" : 100012, "beginTime" : 21, "longTime" : 30, "weddingNum" : 10}
+}

@@ -1,0 +1,444 @@
+<metalib tagsetversion="1" name="Log" version="2">
+
+    <!--
+    ////////////////////////////////////////////////////////
+   该TLOG文档说明：
+     1.该XML只针对第一类数据，用于TLOG开发。
+     2.表与字段说明。 表与字段desc列里面说明可选或必填。
+     3.注意事项。
+       A>增删字段。TLOG XML版本确定并接入TDW后，不能删除字段，增加字段在表结尾增加。
+       B>数据类型。同种数据类型可变更。int类型可以转换string,但string 不能转int.
+     4.表名与字段名尽可能与本XML模板保持一致，方便维护。
+    /////////////////////////////////////////////////////////
+     -->
+
+    <!--*****************************************************************
+    ///////////////////////////////////////////////////////////////////
+    //////////////////第一类走tlog流水数据/////////////////////////////
+    ////////////////////////////////////////////////////////////////////
+    ********************************************************************-->
+
+
+    <!--//////////////////////////////////////////////
+      ///////玩家注册表///////////////////////////////
+     /////////////////////////////////////////////////-->
+    <struct name="PlayerRegister" version="1" desc="(可选)玩家注册">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0 /android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="ClientVersion" type="string" size="64" defaultvalue="NULL" desc="(可选)客户端版本"/>
+        <entry name="SystemSoftware" type="string" size="64" defaultvalue="NULL" desc="(可选)移动终端操作系统版本"/>
+        <entry name="SystemHardware" type="string" size="64" defaultvalue="NULL" desc="(可选)移动终端机型"/>
+        <entry name="TelecomOper" type="string" size="64" defaultvalue="NULL" desc="(必填)运营商"/>
+        <entry name="Network" type="string" size="64" defaultvalue="NULL" desc="(可选)3G/WIFI/2G"/>
+        <entry name="ScreenWidth" type="int" defaultvalue="0" desc="(可选)显示屏宽度"/>
+        <entry name="ScreenHight" type="int" defaultvalue="0" desc="(可选)显示屏高度"/>
+        <entry name="Density" type="float" defaultvalue="0" desc="(可选)像素密度"/>
+        <entry name="RegChannel" type="int" defaultvalue="0" desc="(必填)注册渠道"/>
+        <entry name="CpuHardware" type="string" size="64" defaultvalue="NULL" desc="(可选)cpu类型|频率|核数"/>
+        <entry name="Memory" type="int" defaultvalue="0" desc="(可选)内存信息单位M"/>
+        <entry name="GLRender" type="string" size="64" defaultvalue="NULL" desc="(可选)opengl render信息"/>
+        <entry name="GLVersion" type="string" size="64" defaultvalue="NULL" desc="(可选)opengl版本信息"/>
+        <entry name="DeviceId" type="string" size="64" defaultvalue="NULL" desc="(可选)设备ID"/>
+    </struct>
+
+    <!--//////////////////////////////////////////////
+   ///////玩家登录表///////////////////////////////
+  /////////////////////////////////////////////////-->
+    <struct name="PlayerLogin" version="1" desc="(必填)玩家登陆">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="Level" type="int" desc="(必填)等级"/>
+        <entry name="PlayerFriendsNum" type="int" desc="(必填)玩家好友数量"/>
+        <entry name="ClientVersion" type="string" size="64" defaultvalue="NULL" desc="(必填)客户端版本"/>
+        <entry name="SystemSoftware" type="string" size="64" defaultvalue="NULL" desc="(可选)移动终端操作系统版本"/>
+        <entry name="SystemHardware" type="string" size="64" defaultvalue="NULL" desc="(必填)移动终端机型"/>
+        <entry name="TelecomOper" type="string" size="64" defaultvalue="NULL" desc="(必填)运营商"/>
+        <entry name="Network" type="string" size="64" defaultvalue="NULL" desc="(必填)3G/WIFI/2G"/>
+        <entry name="ScreenWidth" type="int" defaultvalue="0" desc="(可选)显示屏宽度"/>
+        <entry name="ScreenHight" type="int" defaultvalue="0" desc="(可选)显示屏高度"/>
+        <entry name="Density" type="float" defaultvalue="0" desc="(可选)像素密度"/>
+        <entry name="LoginChannel" type="int" defaultvalue="0" desc="(必填)登录渠道"/>
+        <entry name="CpuHardware" type="string" size="64" defaultvalue="NULL" desc="(可选)cpu类型|频率|核数"/>
+        <entry name="Memory" type="int" defaultvalue="0" desc="(可选)内存信息单位M"/>
+        <entry name="GLRender" type="string" size="64" defaultvalue="NULL" desc="(可选)opengl render信息"/>
+        <entry name="GLVersion" type="string" size="64" defaultvalue="NULL" desc="(可选)opengl版本信息"/>
+        <entry name="DeviceId" type="string" size="64" defaultvalue="NULL" desc="(可选)设备ID"/>
+    </struct>
+
+    <!--//////////////////////////////////////////////
+      ///////玩家登出表///////////////////////////////
+     /////////////////////////////////////////////////-->
+    <struct name="PlayerLogout" version="1" desc="(必填)玩家登出">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="OnlineTime" type="int" desc="(必填)本次登录在线时间(秒)"/>
+        <entry name="Level" type="int" desc="(必填)等级"/>
+        <entry name="PlayerFriendsNum" type="int" desc="(必填)玩家好友数量"/>
+        <entry name="ClientVersion" type="string" size="64" defaultvalue="NULL" desc="(必填)客户端版本"/>
+        <entry name="SystemSoftware" type="string" size="64" defaultvalue="NULL" desc="(可选)移动终端操作系统版本"/>
+        <entry name="SystemHardware" type="string" size="64" defaultvalue="NULL" desc="(必填)移动终端机型"/>
+        <entry name="TelecomOper" type="string" size="64" defaultvalue="NULL" desc="(必填)运营商"/>
+        <entry name="Network" type="string" size="64" defaultvalue="NULL" desc="(必填)3G/WIFI/2G"/>
+        <entry name="ScreenWidth" type="int" defaultvalue="0" desc="(可选)显示屏宽度"/>
+        <entry name="ScreenHight" type="int" defaultvalue="0" desc="(可选)显示高度"/>
+        <entry name="Density" type="float" defaultvalue="0" desc="(可选)像素密度"/>
+        <entry name="LoginChannel" type="int" defaultvalue="0" desc="(可选)登录渠道"/>
+        <entry name="CpuHardware" type="string" size="64" defaultvalue="NULL" desc="(可选)cpu类型|频率|核数"/>
+        <entry name="Memory" type="int" defaultvalue="0" desc="(可选)内存信息单位M"/>
+        <entry name="GLRender" type="string" size="64" defaultvalue="NULL" desc="(可选)opengl render信息"/>
+        <entry name="GLVersion" type="string" size="64" defaultvalue="NULL" desc="(可选)opengl版本信息"/>
+        <entry name="DeviceId" type="string" size="64" defaultvalue="NULL" desc="(可选)设备ID"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+     ///////游戏货币流水表///////////////////////////////
+    /////////////////////////////////////////////////-->
+    <macrosgroup name="ADDORREDUCE">
+        <macro name="ADD" value="0" desc="加"/>
+        <macro name="REDUCE" value="1" desc="减"/>
+    </macrosgroup>
+
+    <macrosgroup name="iMoneyType">
+        <macro name="MT_MONEY" value="0" desc="游戏币"/>
+        <macro name="MT_DIAMOND" value="1" desc="钻石"/>
+    </macrosgroup>
+
+    <macrosgroup name="REASON">
+        <macro name="SYSTEM" value="0" desc="系统产出或消耗"/>
+        <macro name="SHOP" value="1" desc="商店交易"/>
+        <macro name="RECHARGE" value="2" desc="充值"/>
+    </macrosgroup>
+
+    <struct name="MoneyFlow" version="1" desc="(必填)货币流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="Sequence" type="int" desc="(可选)用于关联一次动作产生多条不同类型的货币流动日志"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="Level" type="int" desc="(必填)玩家等级"/>
+        <entry name="AfterMoney" type="int" desc="(可选)动作后的金钱数"/>
+        <entry name="iMoney" type="int" desc="(必填)动作涉及的金钱数"/>
+        <entry name="Reason" type="int" desc="(必填)货币流动一级原因"/>
+        <entry name="SubReason" type="int" desc="(可选)货币流动二级原因"/>
+        <entry name="AddOrReduce" type="int" desc="(必填)增加 0/减少 1"/>
+        <entry name="iMoneyType" type="int" desc="(必填)钱的类型MONEYTYPE,其它货币类型参考FAQ文档"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+     ///////道具流水表///////////////////////////////
+    /////////////////////////////////////////////////-->
+    <macrosgroup name="ADDORREDUCE">
+        <macro name="ADD" value="0" desc="加"/>
+        <macro name="REDUCE" value="1" desc="减"/>
+    </macrosgroup>
+
+
+    <struct name="ItemFlow" version="1" desc="(可选)道具流水表">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="Sequence" type="int" desc="(可选)用于关联一次动作产生多条不同类型的道具流动日志"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)玩家"/>
+        <entry name="iGoodsType" type="int" desc="(必填)道具类型"/>
+        <entry name="iGoodsId" type="int" desc="(必填)道具ID"/>
+        <entry name="AfterCount" type="int" desc="(必填)动作后的物品存量"/>
+        <entry name="Count" type="int" desc="(必填)动作涉及的物品数量"/>
+        <entry name="Reason" type="int" desc="(必填)道具流动一级原因"/>
+        <entry name="SubReason" type="int" desc="(必填)道具流动二级原因"/>
+        <entry name="AddOrReduce" type="int" desc="(必填)增加 0/减少 1"/>
+        <entry name="Level" type="int" desc="(必填)玩家等级"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+      ///////道具消费流水表///////////////////////////////
+     /////////////////////////////////////////////////-->
+
+    <macrosgroup name="iMoneyType">
+        <macro name="MT_MONEY" value="0" desc="游戏币"/>
+        <macro name="MT_DIAMOND" value="1" desc="钻石"/>
+    </macrosgroup>
+
+    <struct name="ItemMoneyFlow" version="1" desc="(必填)道具消费流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="Sequence" type="int" desc="(必填)用于关联一次购买产生多条不同类型的货币日志"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)玩家"/>
+        <entry name="iGoodsType" type="int" desc="(必填)道具类型"/>
+        <entry name="iGoodsId" type="int" desc="(必填)道具ID"/>
+        <entry name="Count" type="int" desc="(必填)数量"/>
+        <entry name="iMoney" type="int" desc="(必填)钱"/>
+        <entry name="Level" type="int" desc="(必填)玩家等级"/>
+        <entry name="iMoneyType" type="int" desc="(必填)钱的类型MONEYTYPE,其它货币类型参考FAQ文档"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+    ///////人物等级流水表///////////////////////////////
+   /////////////////////////////////////////////////-->
+
+    <struct name="PlayerExpFlow" version="1" desc="(可选)人物等级流水表">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)玩家"/>
+        <entry name="ExpChange" type="int" desc="(必填)经验变化"/>
+        <entry name="BeforeLevel" type="int" desc="(可选)动作前等级"/>
+        <entry name="AfterLevel" type="int" desc="(必填)动作后等级"/>
+        <entry name="Time" type="int" desc="(必填)升级所用时间(秒)"/>
+        <entry name="Reason" type="int" desc="(必填)经验流动一级原因"/>
+        <entry name="SubReason" type="int" desc="(必填)经验流动二级原因"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+      ///////社交系统流水表///////////////////////////////
+     /////////////////////////////////////////////////-->
+    <macrosgroup name="SNSTYPE">
+        <macro name="SNSTYPE_SHOWOFF" value="0" desc="炫耀"/>
+        <macro name="SNSTYPE_INVITE" value="1" desc="邀请"/>
+        <macro name="SNSTYPE_SENDHEART" value="2" desc="送心"/>
+        <macro name="SNSTYPE_RECEIVEHEART" value="3" desc="收取心"/>
+        <macro name="SNSTYPE_SENDEMAIL" value="4" desc="发邮件"/>
+        <macro name="SNSTYPE_RECEIVEEMAIL" value="5" desc="收邮件"/>
+        <macro name="SNSTYPE_SHARE" value="6" desc="分享"/>
+        <macro name="SNSTYPE_OTHER" value="7" desc="其他原因"/>
+    </macrosgroup>
+
+
+    <struct name="SnsFlow" version="1" desc="(必填)SNS流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="ActorOpenID" type="string" size="64" desc="(必填)动作发起玩家"/>
+        <entry name="RecNum" type="int" desc="(可选)接收玩家个数"/>
+        <entry name="Count" type="int" desc="(必填)发送的数量"/>
+        <entry name="SNSType" type="int" desc="(必填)交互一级类型,其它说明参考FAQ文档"/>
+        <entry name="SNSSubType" type="int" desc="(可选)交互二级类型"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+     ///////单局流水表///////////////////////////////
+    /////////////////////////////////////////////////-->
+    <macrosgroup name="BATTLETYPE">
+        <macro name="BATTLE_PVE" value="0" desc="单人游戏"/>
+        <macro name="BATTLE_PVP" value="1" desc="对战游戏"/>
+        <macro name="BATTLE_OTHER" value="2" desc="其他对局"/>
+    </macrosgroup>
+
+    <struct name="RoundFlow" version="1" desc="单局结束数据流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)玩家"/>
+        <entry name="BattleID" type="int" desc="(必填)本局id"/>
+        <entry name="BattleType" type="int" desc="(必填)战斗类型 对应BATTLETYPE,其它说明参考FAQ文档"/>
+        <entry name="RoundScore" type="int" desc="(必填)本局分数"/>
+        <entry name="RoundTime" type="int" desc="(必填)对局时长(秒)"/>
+        <entry name="Result" type="int" desc="(必填)单局结果"/>
+        <entry name="Rank" type="int" desc="(必填)排名"/>
+        <entry name="Gold" type="int" desc="(必填)金钱"/>
+    </struct>
+
+
+    <!--//////////////////////////////////////////////
+     ///////斩魂财产流水表///////////////////////////////
+    /////////////////////////////////////////////////-->
+    <macrosgroup name="TYPE">
+        <macro name="LINGLI" value="0" desc="灵力"/>
+        <macro name="HONOR" value="1" desc="荣誉"/>
+    </macrosgroup>
+
+    <macrosgroup name="ADDORREDUCE">
+        <macro name="ADD" value="0" desc="加"/>
+        <macro name="REDUCE" value="1" desc="减"/>
+    </macrosgroup>
+
+    <macrosgroup name="REASON">
+        <macro name="SYSTEM" value="0" desc="系统其它产出"/>
+        <macro name="ZHANHUN" value="1" desc="斩魂"/>
+        <macro name="LINGLISHOP" value="2" desc="灵力商店"/>
+    </macrosgroup>
+
+    <struct name="ZhanhunAssetsFlow" version="1" desc="(必填)灵力/荣誉流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="Sequence" type="int" desc="(可选)用于关联一次动作产生多条不同类型的货币流动日志"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" defaultvalue="0" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="Level" type="int" desc="(必填)玩家等级"/>
+        <entry name="Type" type="int" desc="(必填)财产类别"/>
+        <entry name="AfterLingli" type="int" desc="(可选)动作后的灵力数"/>
+        <entry name="iLingli" type="int" desc="(必填)动作涉及的灵力数"/>
+        <entry name="Reason" type="int" desc="(必填)货币流动一级原因"/>
+        <entry name="SubReason" type="int" desc="(可选)货币流动二级原因"/>
+        <entry name="AddOrReduce" type="int" desc="(必填)增加 0/减少 1"/>
+    </struct>
+
+
+    <struct name="CurrencyFlow" version="1" desc="(必填)货币流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iMoneyType" type="int" desc="(必填)货币的类型(0游戏币 1钻石)"/>
+        <entry name="iAddOrReduce" type="int" desc="(必填)产出或消耗(0产出 1消耗)"/>
+        <entry name="iAfterMoney" type="int" desc="(可选)动作后的货币数"/>
+        <entry name="iMoney" type="int" desc="(必填)动作涉及的货币数"/>
+        <entry name="iGoldAdd" type="int" desc="(必填)游戏币产出原因(0无产出 1创号 2炼金 3副本 4活动副本 5万魔塔 6魔域奖励 7悬赏礼包
+																		  8登陆礼包 9每日领取 10首充礼包 11等级礼包 12VIP礼包 13其他礼包 14抽奖 15星级宝箱 16炼狱占领奖励)"/>
+
+        <entry name="iGoldReduce" type="int" desc="(必填)游戏币消耗原因(10000无消耗 10001药品购买 10002灵石购买 10003强化石购买 10004紫色熔炼是购买 10005技能升级
+																		  10006魔灵祭炼 10007爬塔快速闯关 10008副本翻牌)"/>
+
+        <entry name="iDiamondsAdd" type="int" desc="(必填)钻石产出原因(0无产出 1创号 6魔域 7悬赏礼包 8登陆礼包 9每日领取 10首充礼包 11等级礼包 12VIP礼包 13其他礼包
+																		  15星级宝箱 17任务 18充值)"/>
+
+        <entry name="iDiamondsReduce" type="int" desc="(必填)钻石消耗原因(10000无消耗 10002灵石购买 10003强化石购买 10004紫色熔炼石购买 10007爬塔快速闯关 10009商店生命水购买
+																		  10010商店魔法水购买  10011神果购买 10012魂购买 10013魔晶购买  10014橙色熔炼石购买 10015抽奖 10016炼金 10017体力购买  
+																		  10018一键完成日常任务 10019副本复活 10020副本生命水购买 10021副本魔法水购买 10022开启邪神2 10023开启邪神3 10024开启邪神4
+																		  10025开启邪神5 10026清魔域CD 10027购买斩魂次数 10028活动本翻牌 10029炼狱本翻牌)"/>
+        <entry name="Sequence" type="int" desc="(可选)用于关联一次动作产生多条不同类型的货币流动日志"/>
+    </struct>
+
+
+    <struct name="AssetsFlow" version="1" desc="(必填)资产流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iAssetsId" type="int" desc="(必填)资产ID(2001一级灵石 2002二级灵石... 2010十级灵石 1004魔魂1 1005魔魂2 1006魔魂3 1007魔魂4 1008魔魂5
+																		  7001魔晶 7002神果 9021橙装碎片)"/>
+        <entry name="iAddOrReduce" type="int" desc="(必填)产出或消耗(0产出 1消耗)"/>
+        <entry name="iAfterCount" type="int" desc="(可选)动作后的数量"/>
+        <entry name="iCount" type="int" desc="(必填)动作涉及的数量"/>
+        <entry name="iAddReason" type="int" desc="(必填)产出原因(3普通副本 4活动副本 7悬赏礼包 8登陆礼包 9每日领取 10首充礼包 11等级礼包 12VIP礼包 13其他礼包 14抽奖 15星级宝箱
+																		  16炼狱占领奖励 17任务 19钻石购买 20金币购买 21友情购买 22贵族购买 23灵力购买 24合成 25炼狱副本 26多人副本 27分解)"/>
+    </struct>
+
+
+    <struct name="EquipChangeFlow" version="1" desc="(必填)装备变化流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iVipLevel" type="int" desc="(必填)玩家VIP等级"/>
+        <entry name="iEquipId" type="int" desc="(必填)装备ID"/>
+        <entry name="iEquipQuality" type="int" desc="(必填)装备品质(0白色 1绿色 2蓝色 3紫色 4橙色)"/>
+        <entry name="iChangeReason" type="int" desc="(必填)变化原因(0获得 1分解 2出售)"/>
+    </struct>
+
+
+    <struct name="CustomFlow" version="1" desc="(必填)副本通关流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iBattleId" type="int"
+               desc="(必填)本局ID，等于dtEventTime字段的整型，例如 2013-12-26 22:31:18 的iBattleID为 1388068278，为了标识唯一一场副本"/>
+        <entry name="iCustomId" type="int" desc="(必填)关卡ID"/>
+        <entry name="iCustomType" type="int" desc="(必填)副本类型(1剧情副本 2炼狱副本 3多人副本 4活动副本 5万魔塔 7斩魂关卡 8新手关卡 9变身试炼关卡 10PVP关卡)"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iVipLevel" type="int" desc="(必填)玩家VIP等级"/>
+        <entry name="iCareerId" type="int" desc="(必填)玩家职业ID"/>
+        <entry name="iZhanli" type="int" desc="(必填)玩家战力"/>
+        <entry name="iSuccess" type="int" desc="(必填)成功通关(0失败 1成功)"/>
+        <entry name="iStar" type="int" desc="(必填)通关星级(1-5)"/>
+        <entry name="iReliveCost" type="int" desc="(必填)复活钻石消耗"/>
+        <entry name="iBuyHpCost" type="int" desc="(必填)购买生命水钻石消耗"/>
+        <entry name="iBuyMpCost" type="int" desc="(必填)购买魔法水钻石消耗"/>
+        <entry name="iBuyHpCount" type="int" desc="(必填)购买生命水次数"/>
+        <entry name="iBuyMpCount" type="int" desc="(必填)购买魔法水次数"/>
+    </struct>
+
+
+    <struct name="RechargeFlow" version="1" desc="(必填)充值流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iVipLevel" type="int" desc="(必填)玩家VIP等级,充值时的当前等级"/>
+        <entry name="iRechargeMoney" type="int" desc="(必填)充值金额"/>
+    </struct>
+
+
+    <struct name="BuyPhysicalFlow" version="1" desc="(必填)体力购买流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iZuanshiCost" type="int" desc="(必填)单次体力购买钻石消费"/>
+        <entry name="iVipLevel" type="int" desc="(必填)玩家VIP等级,充值时的当前等级"/>
+    </struct>
+
+
+    <struct name="LianjinFlow" version="1" desc="(必填)炼金流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iZuanshiCost" type="int" desc="(必填)单次炼金钻石消费"/>
+        <entry name="iMoneyAdd" type="int" desc="(必填)单次金币产出"/>
+        <entry name="iVipLevel" type="int" desc="(必填)玩家VIP等级,充值时的当前等级"/>
+    </struct>
+
+
+    <struct name="NiudanFlow" version="1" desc="(必填)抽奖流水">
+        <entry name="GameSvrId" type="string" size="25" desc="(必填)登录的游戏服务器编号"/>
+        <entry name="dtEventTime" type="datetime" desc="(必填)游戏事件的时间, 格式 YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameAppid" type="string" size="32" desc="(必填)游戏APPID"/>
+        <entry name="PlatID" type="int" desc="(必填)ios 0/android 1"/>
+        <entry name="vopenid" type="string" size="64" desc="(必填)用户OPENID号"/>
+        <entry name="iLevel" type="int" desc="(必填)玩家等级"/>
+        <entry name="iNiudanType" type="int" desc="(必填)抽奖类别(0灵动之石 1轮回之石 2希望之石 3梦想之石)"/>
+        <entry name="iOperateType" type="int" desc="(必填)操作类别(0单次 1十连)"/>
+        <entry name="iProduceType" type="int" desc="(必填)产出类型"/>
+        <entry name="iZuanshiCost" type="int" desc="(必填)钻石消耗量"/>
+        <entry name="iFriendPointCost" type="int" desc="(必填)友情点消耗量"/>
+        <entry name="iGoodsId" type="string" size="64" desc="(必填)产出物品ID，十连抽时ID以逗号隔开，如： |1001,1002,1003, ... ,1010|"/>
+        <entry name="iGoodsNum" type="string" size="64" desc="(必填)产出物品数量, 十连抽时ID以逗号隔开，顺序同上"/>
+    </struct>
+
+    <!--//////////////////////////////////////////////
+  ///////Use:         the log of server state///////
+ //////Output rules:Every 5 minutes a log/////////-->
+    <struct name="GameSvrState" desc="">
+        <entry name="dtEventTime" type="datetime" desc=" Format: YYYY-MM-DD HH:MM:SS"/>
+        <entry name="vGameIP" type="string" size="32" desc="the IP of server"/>
+    </struct>
+
+
+</metalib>

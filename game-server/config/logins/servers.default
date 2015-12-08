@@ -1,0 +1,201 @@
+{
+    "connector": [
+        {
+            "id": "ls-connector-server-1",
+            "host": "@outerHost",
+            "port": 26011,
+            "clientPort": 26001,
+            "frontend": true,
+            "dedicateDispatcher": true,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26001
+        },
+        {
+            "id": "ls-connector-server-2",
+            "host": "@outerHost",
+            "port": 26012,
+            "clientPort": 26002,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26002
+        },
+        {
+            "id": "ls-connector-server-3",
+            "host": "@outerHost",
+            "port": 26013,
+            "clientPort": 26003,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26003
+        },
+        {
+            "id": "ls-connector-server-4",
+            "host": "@outerHost",
+            "port": 26014,
+            "clientPort": 26004,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26004
+        },
+        {
+            "id": "ls-connector-server-5",
+            "host": "@outerHost",
+            "port": 26015,
+            "clientPort": 26005,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26005
+        },
+        {
+            "id": "ls-connector-server-6",
+            "host": "@outerHost",
+            "port": 26016,
+            "clientPort": 26006,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26006
+        },
+        {
+            "id": "ls-connector-server-7",
+            "host": "@outerHost",
+            "port": 26017,
+            "clientPort": 26007,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26007
+        },
+        {
+            "id": "ls-connector-server-8",
+            "host": "@outerHost",
+            "port": 26018,
+            "clientPort": 26008,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26008
+        },
+        {
+            "id": "ls-connector-server-9",
+            "host": "@outerHost",
+            "port": 26019,
+            "clientPort": 26009,
+            "frontend": true,
+            "dedicateDispatcher": false,
+            "logicType": "login",
+            "mapClientHost": "@mapClientHost",
+            "mapClientPort": 26009
+        }
+    ],
+    "ls": [
+        {
+            "id": "ls-server-1",
+            "host": "127.0.0.1",
+            "port": 26061
+        },
+        {
+            "id": "ls-server-2",
+            "host": "127.0.0.1",
+            "port": 26062
+        },
+        {
+            "id": "ls-server-3",
+            "host": "127.0.0.1",
+            "port": 26063
+        },
+        {
+            "id": "ls-server-4",
+            "host": "127.0.0.1",
+            "port": 26064
+        },
+        {
+            "id": "ls-server-5",
+            "host": "127.0.0.1",
+            "port": 26065
+        },
+        {
+            "id": "ls-server-6",
+            "host": "127.0.0.1",
+            "port": 26066
+        },
+        {
+            "id": "ls-server-7",
+            "host": "127.0.0.1",
+            "port": 26067
+        },
+        {
+            "id": "ls-server-8",
+            "host": "127.0.0.1",
+            "port": 26068
+        }
+    ],
+    "idip": [
+        {
+            "id": "idip-ls-server-1",
+            "host": "127.0.0.1",
+            "port": 26057
+        }
+    ],
+    "lsIdip": [
+        {
+            "id": "lsIdip-server-1",
+            "host": "127.0.0.1",
+            "port": 26151
+        },
+        {
+            "id": "lsIdip-server-2",
+            "host": "127.0.0.1",
+            "port": 26152
+        },
+        {
+            "id": "lsIdip-server-3",
+            "host": "127.0.0.1",
+            "port": 26153
+        },
+        {
+            "id": "lsIdip-server-4",
+            "host": "127.0.0.1",
+            "port": 26154
+        }
+    ],
+    "dbcache": [
+        {
+            "id": "dbcache-server-1",
+            "host": "127.0.0.1",
+            "port": 26091
+        },
+        {
+            "id": "dbcache-server-2",
+            "host": "127.0.0.1",
+            "port": 26092
+        },
+        {
+            "id": "dbcache-server-3",
+            "host": "127.0.0.1",
+            "port": 26093
+        },
+        {
+            "id": "dbcache-server-4",
+            "host": "127.0.0.1",
+            "port": 26094
+        },
+        {
+            "id": "dbcache-server-6",
+            "host": "127.0.0.1",
+            "port": 26096
+        }
+    ]
+}

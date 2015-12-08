@@ -1,0 +1,8 @@
+{
+"1001" : {"attID" : 1001, "attName" : 10010, "icon" : 59102, "firstLevelID" : 1000100, "limitExpLevel" : 15, "levelNum" : 10, "baoXiangID" : 6001, "resetZuanShi" : 0, "resumeZuanShi" : 100}, 
+"1002" : {"attID" : 1002, "attName" : 10020, "icon" : 59102, "firstLevelID" : 1000200, "limitExpLevel" : 30, "levelNum" : 12, "baoXiangID" : 6002, "resetZuanShi" : 0, "resumeZuanShi" : 100}, 
+"1003" : {"attID" : 1003, "attName" : 10030, "icon" : 59102, "firstLevelID" : 1000300, "limitExpLevel" : 45, "levelNum" : 15, "baoXiangID" : 6003, "resetZuanShi" : 0, "resumeZuanShi" : 100}, 
+"1004" : {"attID" : 1004, "attName" : 10040, "icon" : 59102, "firstLevelID" : 1000400, "limitExpLevel" : 60, "levelNum" : 20, "baoXiangID" : 6004, "resetZuanShi" : 0, "resumeZuanShi" : 100}, 
+"1005" : {"attID" : 1005, "attName" : 10050, "icon" : 59102, "firstLevelID" : 1000500, "limitExpLevel" : 75, "levelNum" : 25, "baoXiangID" : 6005, "resetZuanShi" : 0, "resumeZuanShi" : 100}, 
+"1006" : {"attID" : 1006, "attName" : 10060, "icon" : 59102, "firstLevelID" : 1000600, "limitExpLevel" : 90, "levelNum" : 30, "baoXiangID" : 6006, "resetZuanShi" : 0, "resumeZuanShi" : 100}
+}

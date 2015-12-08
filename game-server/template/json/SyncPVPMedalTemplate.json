@@ -1,0 +1,6 @@
+{
+"1001" : {"attID" : 1001, "minCredits" : 0, "maxCredits" : 499, "winCredits" : 20, "failCredits" : 10, "winCoin" : 10, "failCoin" : 2}, 
+"1002" : {"attID" : 1002, "minCredits" : 500, "maxCredits" : 1499, "winCredits" : 17, "failCredits" : 13, "winCoin" : 12, "failCoin" : 3}, 
+"1003" : {"attID" : 1003, "minCredits" : 1500, "maxCredits" : 2999, "winCredits" : 13, "failCredits" : 17, "winCoin" : 15, "failCoin" : 4}, 
+"1004" : {"attID" : 1004, "minCredits" : 3000, "maxCredits" : 999999, "winCredits" : 10, "failCredits" : 20, "winCoin" : 20, "failCoin" : 5}
+}

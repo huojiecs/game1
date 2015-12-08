@@ -1,0 +1,5 @@
+{
+"990001" : {"attID" : 990001, "name" : 8001399, "type" : 2, "customID" : 7001, "open" : 0, "openAwardID" : 0, "openAwardNum" : 0, "openAssetsID" : 0, "openAssetsNum" : 0, "iconID" : 1, "levelMin" : 25, "levelMax" : 110, "openTime" : "12:00~12:15,18:00~18:15 ", "timeID" : 17010, "AssetsID_0" : 1002, "AssetsID_1" : 0, "AssetsID_2" : 0}, 
+"990002" : {"attID" : 990002, "name" : 8001401, "type" : 1, "customID" : 7002, "open" : 1, "openAwardID" : 7001, "openAwardNum" : 10, "openAssetsID" : 7002, "openAssetsNum" : 1, "iconID" : 2, "levelMin" : 25, "levelMax" : 110, "openTime" : "0", "timeID" : 0, "AssetsID_0" : 1001, "AssetsID_1" : 0, "AssetsID_2" : 0}, 
+"990003" : {"attID" : 990003, "name" : 8001402, "type" : 2, "customID" : 7003, "open" : 0, "openAwardID" : 0, "openAwardNum" : 0, "openAssetsID" : 0, "openAssetsNum" : 0, "iconID" : 3, "levelMin" : 40, "levelMax" : 110, "openTime" : "15:00~15:30", "timeID" : 17011, "AssetsID_0" : 1000, "AssetsID_1" : 0, "AssetsID_2" : 0}
+}

@@ -1,0 +1,6 @@
+{
+"2801" : {"xinWuID" : 2801, "xinWuNameID" : 2801113, "xinWuDescID" : 2801213, "xinWuNum" : 1, "xinWuColor" : 1, "effectID" : 62001, "path" : 880101, "priceTypeID" : 1002, "xinWuPrice" : 1000}, 
+"2802" : {"xinWuID" : 2802, "xinWuNameID" : 2802113, "xinWuDescID" : 2802213, "xinWuNum" : 1, "xinWuColor" : 2, "effectID" : 62002, "path" : 880201, "priceTypeID" : 1002, "xinWuPrice" : 2000}, 
+"2803" : {"xinWuID" : 2803, "xinWuNameID" : 2803113, "xinWuDescID" : 2803213, "xinWuNum" : 1, "xinWuColor" : 3, "effectID" : 62003, "path" : 880301, "priceTypeID" : 1002, "xinWuPrice" : 6000}, 
+"2804" : {"xinWuID" : 2804, "xinWuNameID" : 2804113, "xinWuDescID" : 2804213, "xinWuNum" : 1, "xinWuColor" : 4, "effectID" : 62004, "path" : 880401, "priceTypeID" : 1002, "xinWuPrice" : 10000}
+}

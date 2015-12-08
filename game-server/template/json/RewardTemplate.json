@@ -1,0 +1,23 @@
+{
+"1001" : {"attID" : 1001, "dayNum" : 1, "content" : 100101, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 23, "smallJumpType" : 0, "customSmall" : 4, "misType" : 1, "overNum" : 1, "needID" : 1004}, 
+"1002" : {"attID" : 1002, "dayNum" : 2, "content" : 100201, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 6, "smallJumpType" : 0, "customSmall" : 0, "misType" : 2, "overNum" : 1, "needID" : 0}, 
+"1003" : {"attID" : 1003, "dayNum" : 3, "content" : 100301, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 16, "smallJumpType" : 0, "customSmall" : 0, "misType" : 3, "overNum" : 3000, "needID" : 0}, 
+"1004" : {"attID" : 1004, "dayNum" : 4, "content" : 100501, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 20, "smallJumpType" : 0, "customSmall" : 0, "misType" : 4, "overNum" : 5, "needID" : 0}, 
+"1005" : {"attID" : 1005, "dayNum" : 5, "content" : 100401, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 23, "smallJumpType" : 1, "customSmall" : 3, "misType" : 1, "overNum" : 1, "needID" : 2003}, 
+"1006" : {"attID" : 1006, "dayNum" : 6, "content" : 100601, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 10, "smallJumpType" : 0, "customSmall" : 0, "misType" : 5, "overNum" : 1, "needID" : 900006}, 
+"1007" : {"attID" : 1007, "dayNum" : 7, "content" : 100701, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 5, "smallJumpType" : 1, "customSmall" : 0, "misType" : 6, "overNum" : 1, "needID" : 0}, 
+"1008" : {"attID" : 1008, "dayNum" : 8, "content" : 100801, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 23, "smallJumpType" : 1, "customSmall" : 6, "misType" : 1, "overNum" : 1, "needID" : 2006}, 
+"1009" : {"attID" : 1009, "dayNum" : 9, "content" : 100901, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 6, "smallJumpType" : 0, "customSmall" : 0, "misType" : 2, "overNum" : 1, "needID" : 0}, 
+"1010" : {"attID" : 1010, "dayNum" : 10, "content" : 101001, "icon" : 0, "rewardID" : 1002, "rewardNum" : 5, "bigJumpType" : 16, "smallJumpType" : 0, "customSmall" : 0, "misType" : 3, "overNum" : 5000, "needID" : 0}, 
+"1011" : {"attID" : 1011, "dayNum" : 11, "content" : 101101, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 23, "smallJumpType" : 2, "customSmall" : 3, "misType" : 1, "overNum" : 1, "needID" : 3003}, 
+"1012" : {"attID" : 1012, "dayNum" : 12, "content" : 101201, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 20, "smallJumpType" : 0, "customSmall" : 0, "misType" : 4, "overNum" : 10, "needID" : 0}, 
+"1013" : {"attID" : 1013, "dayNum" : 13, "content" : 101301, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 10, "smallJumpType" : 0, "customSmall" : 0, "misType" : 5, "overNum" : 1, "needID" : 900007}, 
+"1014" : {"attID" : 1014, "dayNum" : 14, "content" : 101401, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 5, "smallJumpType" : 1, "customSmall" : 0, "misType" : 6, "overNum" : 1, "needID" : 0}, 
+"1015" : {"attID" : 1015, "dayNum" : 15, "content" : 101501, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 23, "smallJumpType" : 2, "customSmall" : 7, "misType" : 1, "overNum" : 1, "needID" : 3007}, 
+"1016" : {"attID" : 1016, "dayNum" : 16, "content" : 101601, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 6, "smallJumpType" : 0, "customSmall" : 0, "misType" : 2, "overNum" : 1, "needID" : 0}, 
+"1017" : {"attID" : 1017, "dayNum" : 17, "content" : 101701, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 16, "smallJumpType" : 0, "customSmall" : 0, "misType" : 3, "overNum" : 7000, "needID" : 0}, 
+"1018" : {"attID" : 1018, "dayNum" : 18, "content" : 101801, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 23, "smallJumpType" : 3, "customSmall" : 3, "misType" : 1, "overNum" : 1, "needID" : 4003}, 
+"1019" : {"attID" : 1019, "dayNum" : 19, "content" : 101901, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 20, "smallJumpType" : 0, "customSmall" : 0, "misType" : 4, "overNum" : 15, "needID" : 0}, 
+"1020" : {"attID" : 1020, "dayNum" : 20, "content" : 102001, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 10, "smallJumpType" : 0, "customSmall" : 0, "misType" : 5, "overNum" : 1, "needID" : 900008}, 
+"1021" : {"attID" : 1021, "dayNum" : 21, "content" : 102101, "icon" : 0, "rewardID" : 1002, "rewardNum" : 10, "bigJumpType" : 5, "smallJumpType" : 1, "customSmall" : 0, "misType" : 6, "overNum" : 1, "needID" : 0}
+}

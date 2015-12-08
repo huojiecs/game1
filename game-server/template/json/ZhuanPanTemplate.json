@@ -1,0 +1,14 @@
+{
+"1" : {"attID" : 1, "rate" : 150, "yuanBaoNum" : 240, "assetsID" : 6021, "assetsNum" : 1}, 
+"2" : {"attID" : 2, "rate" : 1400, "yuanBaoNum" : 60, "assetsID" : 6021, "assetsNum" : 1}, 
+"3" : {"attID" : 3, "rate" : 1000, "yuanBaoNum" : 80, "assetsID" : 6021, "assetsNum" : 1}, 
+"4" : {"attID" : 4, "rate" : 10, "yuanBaoNum" : 600, "assetsID" : 6021, "assetsNum" : 1}, 
+"5" : {"attID" : 5, "rate" : 870, "yuanBaoNum" : 100, "assetsID" : 6021, "assetsNum" : 1}, 
+"6" : {"attID" : 6, "rate" : 300, "yuanBaoNum" : 180, "assetsID" : 6021, "assetsNum" : 1}, 
+"7" : {"attID" : 7, "rate" : 1400, "yuanBaoNum" : 60, "assetsID" : 6021, "assetsNum" : 1}, 
+"8" : {"attID" : 8, "rate" : 100, "yuanBaoNum" : 300, "assetsID" : 6021, "assetsNum" : 1}, 
+"9" : {"attID" : 9, "rate" : 1000, "yuanBaoNum" : 80, "assetsID" : 6021, "assetsNum" : 1}, 
+"10" : {"attID" : 10, "rate" : 1500, "yuanBaoNum" : 120, "assetsID" : 6021, "assetsNum" : 1}, 
+"11" : {"attID" : 11, "rate" : 1400, "yuanBaoNum" : 60, "assetsID" : 6021, "assetsNum" : 1}, 
+"12" : {"attID" : 12, "rate" : 870, "yuanBaoNum" : 100, "assetsID" : 6021, "assetsNum" : 1}
+}

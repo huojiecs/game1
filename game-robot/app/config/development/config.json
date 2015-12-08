@@ -1,0 +1,45 @@
+{
+    "master": {
+        "host": "192.168.21.25",
+        "port": 8888,
+        "webport": 8889,
+        "interval": 1000,
+        "autoRunAgent": true,
+        "maxUser": 500
+    },
+
+    "gameServer": {
+        "host": "192.168.21.25",
+        "port": 26001
+    },
+
+    "client": {
+        "fixSeed": false,
+        "fixCheckID": false,
+        "CheckID": "cfcd208495d565ef66e7dff9f98764da"
+    },
+
+    "modulesInterval": {
+        "chart": 3000,
+        "chat": 5000,
+        "activity": 0,
+        "climb": 0,
+        "item": 1000,
+        "mission": 0,
+        "cs_player": 0,
+        "cs_room": 0,
+        "cs_shop": 0,
+        "room": 10000,
+        "move": 0,
+
+        "bianShen": 0,
+        "friend": 0,
+        "friends": 0,
+        "mail": 0,
+        "pvp": 0,
+        "upplayerlevel": 0,
+        "equipitem": 0,
+        "soulsuccinct":10,
+        "zhuanpan":10
+    }
+}

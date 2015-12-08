@@ -1,0 +1,17 @@
+{
+    "sequence": "0",
+    "hosts": [
+        {
+            "host": "@tlogHost",
+            "port": "@tlogPort"
+        },
+        {
+            "host": "@tlogHost",
+            "port": "@tlogPort"
+        },
+        {
+            "host": "@tlogHost",
+            "port": "@tlogPort"
+        }
+    ]
+}

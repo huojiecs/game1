@@ -1,0 +1,30 @@
+{
+    "proxy": {
+        "url": ""
+    },
+    "cmge": {
+        "appKey": "c0a0a898e55b0e0099d8c24dfa33022e"
+    },
+    "cmgePayment": {
+        "appKey": "c0a0a898e55b0e0099d8c24dfa33022e",
+        "hostUrl": "http://api.qmphs.com"
+    },
+    "adjust": {
+        "android": {
+            "app_token": "vj8se34rfkpb",
+            "event_token": "8nu0qr",
+            "s2s": 1,
+            "currency": "USD",
+            "environment": "production",
+            "hostUrl": "http://s2s.adjust.com"
+        },
+        "ios": {
+            "app_token": "bhn7swfx2mdh",
+            "event_token": "gm0bss",
+            "s2s": 1,
+            "currency": "USD",
+            "environment": "production",
+            "hostUrl": "http://s2s.adjust.com"
+        }
+    }
+}

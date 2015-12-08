@@ -1,0 +1,13 @@
+{
+"1" : {"attID" : 1, "minLevel" : 1, "maxLevel" : 1, "lingliNum" : 20000, "yuanbaoNum" : 0}, 
+"2" : {"attID" : 2, "minLevel" : 2, "maxLevel" : 2, "lingliNum" : 18000, "yuanbaoNum" : 0}, 
+"3" : {"attID" : 3, "minLevel" : 3, "maxLevel" : 3, "lingliNum" : 16000, "yuanbaoNum" : 0}, 
+"4" : {"attID" : 4, "minLevel" : 4, "maxLevel" : 10, "lingliNum" : 14000, "yuanbaoNum" : 0}, 
+"5" : {"attID" : 5, "minLevel" : 11, "maxLevel" : 50, "lingliNum" : 13000, "yuanbaoNum" : 0}, 
+"6" : {"attID" : 6, "minLevel" : 51, "maxLevel" : 100, "lingliNum" : 12000, "yuanbaoNum" : 0}, 
+"7" : {"attID" : 7, "minLevel" : 101, "maxLevel" : 200, "lingliNum" : 11000, "yuanbaoNum" : 0}, 
+"8" : {"attID" : 8, "minLevel" : 201, "maxLevel" : 500, "lingliNum" : 10000, "yuanbaoNum" : 0}, 
+"9" : {"attID" : 9, "minLevel" : 501, "maxLevel" : 1000, "lingliNum" : 9000, "yuanbaoNum" : 0}, 
+"10" : {"attID" : 10, "minLevel" : 1001, "maxLevel" : 2000, "lingliNum" : 8000, "yuanbaoNum" : 0}, 
+"11" : {"attID" : 11, "minLevel" : 2001, "maxLevel" : 99999999, "lingliNum" : 8000, "yuanbaoNum" : 0}
+}

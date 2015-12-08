@@ -1,0 +1,8 @@
+{
+"1001" : {"attID" : 1001, "attName" : 10010188, "attOrder" : 1, "maxLevel" : 40}, 
+"1002" : {"attID" : 1002, "attName" : 10020188, "attOrder" : 2, "maxLevel" : 40}, 
+"1003" : {"attID" : 1003, "attName" : 10030188, "attOrder" : 3, "maxLevel" : 40}, 
+"1004" : {"attID" : 1004, "attName" : 10040188, "attOrder" : 4, "maxLevel" : 40}, 
+"1005" : {"attID" : 1005, "attName" : 10050188, "attOrder" : 5, "maxLevel" : 40}, 
+"1006" : {"attID" : 1006, "attName" : 10060188, "attOrder" : 6, "maxLevel" : 40}
+}

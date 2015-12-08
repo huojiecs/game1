@@ -1,0 +1,254 @@
+{
+    "appenders": [
+        {
+            "type": "dateFile",
+            "filename": "../logs/node-log-${opts:serverId}",
+            "pattern": ".yyyy-MM-dd-hh.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 50
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/pomelo-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "con-log"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/pomelo-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "rpc-log"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/pomelo-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "forward-log"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/pomelo-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "crash-log"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/idip-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "idip"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/api-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "api"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/adjust-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "adjust"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/tlog-log",
+            "pattern": ".yyyy-MM-dd-hh.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "%m"
+            },
+            "backups": 50,
+            "category": "tlog"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/adjust-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "%m"
+            },
+            "backups": 50,
+            "category": "adjust"
+        },
+        {
+            "type": "dateFile",
+            "filename": "../logs/connector-status-log",
+            "pattern": ".yyyy-MM-dd.log",
+            "alwaysIncludePattern": true,
+            "maxLogSize": 20971520,
+            "layout": {
+                "type": "pattern",
+                "pattern": "[%d] [%[%5.5p%]] [${opts:pid}] ${opts:serverId} - %m"
+            },
+            "backups": 50,
+            "category": "connector-status"
+        }
+    ],
+    "levels": {
+        "ls-connector-server-1": "WARN",
+        "ls-connector-server-2": "WARN",
+        "ls-connector-server-3": "WARN",
+        "ls-connector-server-4": "WARN",
+        "ls-connector-server-5": "WARN",
+        "ls-connector-server-6": "WARN",
+        "ls-connector-server-7": "WARN",
+        "ls-connector-server-8": "WARN",
+        "ls-connector-server-9": "WARN",
+        "ls-connector-server-10": "WARN",
+        "ls-connector-server-11": "WARN",
+        "ls-connector-server-12": "WARN",
+        "ls-server-1": "WARN",
+        "ls-server-2": "WARN",
+        "ls-server-3": "WARN",
+        "ls-server-4": "WARN",
+        "ls-server-5": "WARN",
+        "ls-server-6": "WARN",
+        "ls-server-7": "WARN",
+        "ls-server-8": "WARN",
+        "ls-server-9": "WARN",
+        "ls-server-10": "WARN",
+        "ls-server-11": "WARN",
+        "ls-server-12": "WARN",
+        "lsIdip-server-1": "WARN",
+        "lsIdip-server-2": "WARN",
+        "lsIdip-server-3": "WARN",
+        "lsIdip-server-4": "WARN",
+        "lsIdip-server-5": "WARN",
+        "lsIdip-server-6": "WARN",
+        "lsIdip-server-7": "WARN",
+        "lsIdip-server-8": "WARN",
+        "lsIdip-server-9": "WARN",
+        "lsIdip-server-10": "WARN",
+        "lsIdip-server-11": "WARN",
+        "lsIdip-server-12": "WARN",
+        "psIdip-server-1": "WARN",
+        "psIdip-server-2": "WARN",
+        "psIdip-server-3": "WARN",
+        "psIdip-server-4": "WARN",
+        "psIdip-server-5": "WARN",
+        "psIdip-server-6": "WARN",
+        "psIdip-server-7": "WARN",
+        "psIdip-server-8": "WARN",
+        "psIdip-server-9": "WARN",
+        "psIdip-server-10": "WARN",
+        "psIdip-server-11": "WARN",
+        "psIdip-server-12": "WARN",
+        "connector-server-1": "WARN",
+        "connector-server-2": "WARN",
+        "connector-server-3": "WARN",
+        "connector-server-4": "WARN",
+        "connector-server-5": "WARN",
+        "connector-server-6": "WARN",
+        "connector-server-7": "WARN",
+        "connector-server-8": "WARN",
+        "connector-server-9": "WARN",
+        "connector-server-10": "WARN",
+        "connector-server-11": "WARN",
+        "connector-server-12": "WARN",
+        "cs-server-1": "WARN",
+        "cs-server-2": "WARN",
+        "cs-server-3": "WARN",
+        "cs-server-4": "WARN",
+        "cs-server-5": "WARN",
+        "cs-server-6": "WARN",
+        "cs-server-7": "WARN",
+        "cs-server-8": "WARN",
+        "cs-server-9": "WARN",
+        "cs-server-10": "WARN",
+        "chat-server-1": "WARN",
+        "rs-server-1": "WARN",
+        "ps-server-1": "WARN",
+        "fs-server-1": "WARN",
+        "ms-server-1": "WARN",
+        "pvp-server-1": "WARN",
+        "chart-server-1": "WARN",
+        "us-server-1": "WARN",
+        "idip-global-server-1": "INFO",
+        "idip-ls-server-1": "INFO",
+        "idip-game-server-1": "INFO",
+        "dbcache-server-1": "INFO",
+        "dbcache-server-2": "INFO",
+        "dbcache-server-3": "INFO",
+        "dbcache-server-4": "INFO",
+        "dbcache-server-5": "INFO",
+        "dbcache-server-6": "INFO",
+        "dbcache-server-7": "INFO",
+        "dbcache-server-8": "INFO",
+        "dbcache-server-9": "INFO",
+        "dbcache-server-10": "INFO",
+        "idip": "WARN",
+        "api": "WARN",
+        "adjust": "WARN",
+        "rpc-log": "WARN",
+        "forward-log": "WARN",
+        "pomelo": "WARN",
+        "pomelo-rpc": "WARN",
+        "console": "WARN",
+        "tencent-oauth": "INFO",
+        "tencent-payment": "INFO",
+        "tencent-tss": "INFO",
+        "connector-status": "INFO",
+        "tlog": "INFO"
+    },
+    "reloadSecs": 10,
+    "lineDebug": false,
+    "replaceConsole": true
+}

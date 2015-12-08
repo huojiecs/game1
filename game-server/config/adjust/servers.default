@@ -1,0 +1,20 @@
+{
+    "adjust": [
+        {
+            "args": "--debug=57059",
+            "id": "adjust-global-server-1",
+            "adjustHost": "0.0.0.0",
+            "adjustPort": 8137,
+            "host": "127.0.0.1",
+            "port": 27559
+        }
+    ],
+    "dbcache": [
+        {
+            "args": "--debug=57081",
+            "id": "dbcache-server-1",
+            "host": "127.0.0.1",
+            "port": 27581
+        }
+    ]
+}

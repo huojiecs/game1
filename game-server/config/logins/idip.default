@@ -1,0 +1,163 @@
+{
+    "host": "0.0.0.0",
+    "port": 8130,
+    "commands": {
+
+        "4097": {
+            "path": "query_user_info",
+            "server": "cs"
+        },
+        "4099": {
+            "path": "query_asset_info",
+            "server": "cs"
+        },
+        "4101": {
+            "path": "query_equip_info",
+            "server": "cs"
+        },
+        "4103": {
+            "path": "query_ban_info",
+            "server": "lsIdip"
+        },
+        "4105": {
+            "path": "query_rolelist",
+            "server": "lsIdip"
+        },
+        "4107": {
+            "path": "do_active_usr",
+            "server": "lsIdip"
+        },
+        "4109": {
+            "path": "do_ban_role",
+            "server": "psIdip"
+        },
+        "4111": {
+            "path": "do_unban_role",
+            "server": "lsIdip"
+        },
+        "4113": {
+            "path": "do_update_exp",
+            "server": "cs"
+        },
+        "4115": {
+            "path": "do_update_level",
+            "server": "cs"
+        },
+        "4117": {
+            "path": "do_update_physical",
+            "server": "cs"
+        },
+        "4119": {
+            "path": "do_update_asset",
+            "server": "cs"
+        },
+        "4121": {
+            "path": "do_set_asset",
+            "server": "cs"
+        },
+        "4123": {
+            "path": "do_add_equip",
+            "server": "cs"
+        },
+        "4125": {
+            "path": "do_del_equip",
+            "server": "cs"
+        },
+        "4127": {
+            "path": "do_send_mail_item",
+            "server": "ms"
+        },
+        "4129": {
+            "path": "do_send_closearea_notice",
+            "server": "chat"
+        },
+        "4131": {
+            "path": "do_send_game_notice",
+            "server": "chat"
+        },
+        "4133": {
+            "path": "do_send_rollnotice",
+            "server": "lsIdip"
+        },
+        "4135": {
+            "path": "query_notice",
+            "server": "chat"
+        },
+        "4137": {
+            "path": "do_del_notice",
+            "server": "lsIdip"
+        },
+        "4139": {
+            "path": "do_clear_usrdata",
+            "server": "cs"
+        },
+        "4141": {
+            "path": "aq_query_userbaseinfo",
+            "server": "cs"
+        },
+        "4143": {
+            "path": "aq_do_send_mail",
+            "server": "ms"
+        },
+        "4145": {
+            "path": "aq_do_update_money",
+            "server": "cs"
+        },
+        "4147": {
+            "path": "aq_do_set_duppass_status",
+            "server": "rs"
+        },
+        "4149": {
+            "path": "aq_do_clear_gamescore",
+            "server": "cs"
+        },
+        "4151": {
+            "path": "aq_do_set_gamescore",
+            "server": "cs"
+        },
+        "4153": {
+            "path": "aq_do_init_account",
+            "server": "psIdip"
+        },
+        "4155": {
+            "path": "aq_do_zeroprofit",
+            "server": "cs"
+        },
+        "4157": {
+            "path": "aq_do_ban_play",
+            "server": "cs"
+        },
+        "4159": {
+            "path": "aq_do_ban_joinrank",
+            "server": "chart"
+        },
+        "4161": {
+            "path": "aq_do_ban_role",
+            "server": "psIdip"
+        },
+        "4163": {
+            "path": "aq_do_maskchat_role",
+            "server": "chat"
+        },
+        "4165": {
+            "path": "aq_do_relieve_punish",
+            "server": "cs"
+        },
+        "4167": {
+            "path": "do_send_mail_all",
+            "server": "lsIdip"
+        },
+        "4169": {
+            "path": "do_update_vip_level",
+            "server": "psIdip"
+        },
+        "4171": {
+            "path": "query_accinfo_by_rolename",
+            "server": "lsIdip"
+        },
+        "4175": {
+            "path": "query_rolelist_partition",
+            "server": "psIdip"
+        }
+    }
+}

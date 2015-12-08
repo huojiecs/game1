@@ -1,0 +1,5 @@
+{
+    "id": "adjust-master-server",
+    "host": "@outerHost",
+    "port": 27099
+}

@@ -1,0 +1,15 @@
+{
+"10001" : {"attID" : 10001, "waveNum" : 1, "star_1" : 1, "num_1" : 3, "star_2" : 1, "num_2" : 3}, 
+"10002" : {"attID" : 10002, "waveNum" : 1, "star_1" : 1, "num_1" : 3, "star_2" : 2, "num_2" : 3}, 
+"10003" : {"attID" : 10003, "waveNum" : 1, "star_1" : 1, "num_1" : 3, "star_2" : 1, "num_2" : 3}, 
+"10004" : {"attID" : 10004, "waveNum" : 2, "star_1" : 1, "num_1" : 3, "star_2" : 2, "num_2" : 3}, 
+"10005" : {"attID" : 10005, "waveNum" : 2, "star_1" : 2, "num_1" : 3, "star_2" : 2, "num_2" : 3}, 
+"10006" : {"attID" : 10006, "waveNum" : 2, "star_1" : 2, "num_1" : 3, "star_2" : 3, "num_2" : 3}, 
+"10007" : {"attID" : 10007, "waveNum" : 3, "star_1" : 2, "num_1" : 3, "star_2" : 3, "num_2" : 3}, 
+"10008" : {"attID" : 10008, "waveNum" : 3, "star_1" : 2, "num_1" : 3, "star_2" : 4, "num_2" : 1}, 
+"10009" : {"attID" : 10009, "waveNum" : 3, "star_1" : 2, "num_1" : 3, "star_2" : 2, "num_2" : 3}, 
+"10010" : {"attID" : 10010, "waveNum" : 4, "star_1" : 3, "num_1" : 3, "star_2" : 3, "num_2" : 3}, 
+"10011" : {"attID" : 10011, "waveNum" : 4, "star_1" : 3, "num_1" : 3, "star_2" : 4, "num_2" : 1}, 
+"10012" : {"attID" : 10012, "waveNum" : 4, "star_1" : 4, "num_1" : 1, "star_2" : 4, "num_2" : 1}, 
+"10013" : {"attID" : 10013, "waveNum" : 5, "star_1" : 5, "num_1" : 1, "star_2" : 0, "num_2" : 0}
+}

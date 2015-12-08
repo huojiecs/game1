@@ -1,0 +1,40 @@
+{
+    "list": [
+        {
+            "serverUid": 10000,
+            "displayName": "临时测试服",
+            "isNew": true,
+            "isRecommend": false
+        },
+        {
+            "serverUid": 11001,
+            "displayName": "腾讯 Android Head",
+            "isNew": true,
+            "isRecommend": false
+        },
+        {
+            "serverUid": 11003,
+            "displayName": "腾讯 Android Next",
+            "isNew": false,
+            "isRecommend": true
+        },
+        {
+            "serverUid": 12001,
+            "displayName": "腾讯 iOS Head",
+            "isNew": false,
+            "isRecommend": true
+        },
+        {
+            "serverUid": 12002,
+            "displayName": "腾讯 iOS Approval",
+            "isNew": false,
+            "isRecommend": true
+        },
+        {
+            "serverUid": 12003,
+            "displayName": "腾讯 iOS Next",
+            "isNew": false,
+            "isRecommend": true
+        }
+    ]
+}

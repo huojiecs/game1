@@ -1,0 +1,7 @@
+{
+    "connector.entryHandler.Enter": {
+        "required string checkID": 1,
+        "optional string versionID": 2,
+        "optional string platform": 3
+    }
+}

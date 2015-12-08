@@ -1,0 +1,20 @@
+{
+    "api": [
+        {
+            "args": "--debug=56059",
+            "id": "api-global-server-1",
+            "apiHost": "0.0.0.0",
+            "apiPort": 8130,
+            "host": "127.0.0.1",
+            "port": 26559
+        }
+    ],
+    "dbcache": [
+        {
+            "args": "--debug=56081",
+            "id": "dbcache-server-1",
+            "host": "127.0.0.1",
+            "port": 26581
+        }
+    ]
+}

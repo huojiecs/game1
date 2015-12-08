@@ -1,0 +1,7 @@
+{
+"70001" : {"attID" : 70001, "PetID" : 80001, "PetName" : 700011, "PetSpriteName" : 700012, "NeedMoneyID" : 1001, "NeedMoneyNum" : 10000}, 
+"70002" : {"attID" : 70002, "PetID" : 80001, "PetName" : 700021, "PetSpriteName" : 700022, "NeedMoneyID" : 1001, "NeedMoneyNum" : 20000}, 
+"70003" : {"attID" : 70003, "PetID" : 80001, "PetName" : 700031, "PetSpriteName" : 700032, "NeedMoneyID" : 1001, "NeedMoneyNum" : 50000}, 
+"70004" : {"attID" : 70004, "PetID" : 80001, "PetName" : 700041, "PetSpriteName" : 700042, "NeedMoneyID" : 1001, "NeedMoneyNum" : 80000}, 
+"70005" : {"attID" : 70005, "PetID" : 80001, "PetName" : 700051, "PetSpriteName" : 700052, "NeedMoneyID" : 1001, "NeedMoneyNum" : 90000}
+}

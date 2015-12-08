@@ -1,0 +1,53 @@
+{
+    "ignoreMessage": {
+        "cs.roomHandler.Move": true,
+        "cs.roomHandler.NpcDropHp": true,
+        "cs.roomHandler.PlayerAtt": true,
+        "cs.roomHandler.UseSkill": true
+    },
+
+    "ignoreFirewall": {
+        "ls.loginHandler.Login": true,
+        "connector.entryHandler.Enter": true
+    },
+
+    "firewall": {
+        "cs.roomHandler.Move": 500,
+        "chat.chatHandler.SendChat": 4500,
+        "pvp.aresHandler.getAresInfo": 1000
+    },
+
+    "drop": {
+        "cs.roomHandler.Move": 5,
+        "chat.chatHandler.SendChat": 5,
+        "cs.itemHandler.Intensify": 10,
+        "cs.itemHandler.SynthesizeStar": 10,
+        "cs.itemHandler.EquipItem": 10,
+        "cs.itemHandler.SellItem": 10,
+        "cs.itemHandler.InlayStar": 10,
+        "cs.itemHandler.RemoveStar": 10,
+        "chart.chartHandler.GetChart": 3,
+        "rs.roomHandler.CreateTeam": 3,
+        "cs.roomHandler.UseSkill": 5,
+        "rs.chartHandler.GetChart": 3,
+        "rs.roomHandler.GetTeamList": 3,
+        "pvp.aresHandler.getAresInfo": 3,
+        "pvp.aresHandler.requestBattle": 3,
+        "cs.itemHandler.requestLeftList": 3,
+        "cs.itemHandler.exchangeGood": 3
+    },
+
+   "globalQueue": {
+         "chat.chatHandler.SendChat": 30,
+         "cs.roomHandler.Move": 50,
+         "pvp.aresHandler.getAresInfo": 20,
+         "pvp.aresHandler.requestBattle": 20,
+         "cs.itemHandler.requestLeftList": 30
+     },
+
+     "catchRoleMsg": {
+     },
+
+    "disconnectQueueSize": 120,
+    "defaultFirewall": 0
+}

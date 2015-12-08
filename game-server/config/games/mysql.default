@@ -1,0 +1,68 @@
+{
+    "global": {
+        "loopCount": 10,
+        "dbMod": 10,
+        "isWhiteOnly": false,
+        "enableLog": false,
+        "isLogin": true,
+        "isCreateRole": true
+    },
+    "account": [
+        {
+            "connectionLimit": 40,
+            "host": "@accountHost",
+            "user": "@accountUser",
+            "password": "@accountPassword",
+            "database": "@accountDb",
+            "index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            "port": "3306"
+        }
+    ],
+    "account_global": {
+        "connectionLimit": 40,
+        "host": "@accountGlobalHost",
+        "user": "@accountGlobalUser",
+        "password": "@accountGlobalPassword",
+        "database": "@accountGlobalDb",
+        "port": "3306"
+    },
+    "game": {
+        "connectionLimit": 40,
+        "host": "@gameHost",
+        "user": "@gameUser",
+        "password": "@gamePassword",
+        "database": "@gameDb",
+        "index": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "port": "3306"
+    },
+    "tbLog": {
+        "connectionLimit": 40,
+        "host": "@tbLogHost",
+        "user": "@tbLogUser",
+        "password": "@tbLogPassword",
+        "database": "@tbLogDb",
+        "port": "3306"
+    }
+}

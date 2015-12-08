@@ -1,0 +1,11 @@
+﻿{
+"1001" : {"attID" : 1001, "extinfo" : "友情点", "title" : "赠送友情点", "description" : "赠送你友情点，快去兑换体力继续游戏吧。", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1002" : {"attID" : 1002, "extinfo" : "好友邀请", "title" : "好友邀请", "description" : "全民破坏神打的好爽啊，赶快一起来玩吧！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1003" : {"attID" : 1003, "extinfo" : "分数超过炫耀", "title" : "超越炫耀", "description" : "我在万魔塔排行中超过你啦！不服来挑战呀！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1004" : {"attID" : 1004, "extinfo" : "抽奖分享", "title" : "抽奖", "description" : "运气好爆了！%j抽到了神秘大奖！赶快来试一试吧！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1005" : {"attID" : 1005, "extinfo" : "万魔塔小炫一下", "title" : "炫耀分享", "description" : "%j在万魔塔闯关，在%j榜中飙升到了第%j名，快去膜拜他吧。", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1006" : {"attID" : 1006, "extinfo" : "剧情关卡分享", "title" : "闯关成功", "description" : "%j神勇发挥，成功闯过第%j章第%j关，快来膜拜他吧！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1007" : {"attID" : 1007, "extinfo" : "炼狱关卡分享", "title" : "闯关成功", "description" : "%j神勇发挥，成功闯过炼狱模式第%j章第%j关，快来膜拜他吧！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1008" : {"attID" : 1008, "extinfo" : "万魔塔关卡分享", "title" : "闯关成功", "description" : "%j神勇发挥，成功闯过第%j关，快来膜拜他吧！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}, 
+"1009" : {"attID" : 1009, "extinfo" : "斩魂关卡分享", "title" : "斩魂成功", "description" : "%j神勇发挥，成功斩杀对手，快来膜拜他吧！", "thumb_media_id" : "uwL7QdmBIm3nwM1wcijLXwpP-Mx8aIsaGr3tGgKm2XALBwjclTpMaMBpyO2_uIRN"}
+}

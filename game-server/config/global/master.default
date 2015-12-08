@@ -1,0 +1,5 @@
+{
+    "id": "global-master-server",
+    "host": "@outerHost",
+    "port": 26098
+}

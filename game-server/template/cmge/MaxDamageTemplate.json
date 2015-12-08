@@ -1,0 +1,23 @@
+{
+"1" : {"attID" : 1, "minPower" : 0, "maxPower" : 1250, "minDamage" : 9500, "maxDamage" : 10000}, 
+"2" : {"attID" : 2, "minPower" : 1251, "maxPower" : 2500, "minDamage" : 19000, "maxDamage" : 20000}, 
+"3" : {"attID" : 3, "minPower" : 2501, "maxPower" : 5000, "minDamage" : 38000, "maxDamage" : 40000}, 
+"4" : {"attID" : 4, "minPower" : 5001, "maxPower" : 8750, "minDamage" : 66500, "maxDamage" : 70000}, 
+"5" : {"attID" : 5, "minPower" : 8751, "maxPower" : 12500, "minDamage" : 95000, "maxDamage" : 100000}, 
+"6" : {"attID" : 6, "minPower" : 12501, "maxPower" : 25000, "minDamage" : 190000, "maxDamage" : 200000}, 
+"7" : {"attID" : 7, "minPower" : 25001, "maxPower" : 50000, "minDamage" : 380000, "maxDamage" : 400000}, 
+"8" : {"attID" : 8, "minPower" : 50001, "maxPower" : 62500, "minDamage" : 475000, "maxDamage" : 500000}, 
+"9" : {"attID" : 9, "minPower" : 62501, "maxPower" : 75000, "minDamage" : 570000, "maxDamage" : 600000}, 
+"10" : {"attID" : 10, "minPower" : 75001, "maxPower" : 87500, "minDamage" : 665000, "maxDamage" : 700000}, 
+"11" : {"attID" : 11, "minPower" : 87501, "maxPower" : 100000, "minDamage" : 760000, "maxDamage" : 800000}, 
+"12" : {"attID" : 12, "minPower" : 100001, "maxPower" : 112500, "minDamage" : 855000, "maxDamage" : 900000}, 
+"13" : {"attID" : 13, "minPower" : 112501, "maxPower" : 125000, "minDamage" : 950000, "maxDamage" : 1000000}, 
+"14" : {"attID" : 14, "minPower" : 125001, "maxPower" : 137500, "minDamage" : 1045000, "maxDamage" : 1100000}, 
+"15" : {"attID" : 15, "minPower" : 137501, "maxPower" : 150000, "minDamage" : 1140000, "maxDamage" : 1200000}, 
+"16" : {"attID" : 16, "minPower" : 150001, "maxPower" : 162500, "minDamage" : 1235000, "maxDamage" : 1300000}, 
+"17" : {"attID" : 17, "minPower" : 162501, "maxPower" : 175000, "minDamage" : 1330000, "maxDamage" : 1400000}, 
+"18" : {"attID" : 18, "minPower" : 175001, "maxPower" : 187500, "minDamage" : 1425000, "maxDamage" : 1500000}, 
+"19" : {"attID" : 19, "minPower" : 187501, "maxPower" : 200000, "minDamage" : 1520000, "maxDamage" : 1600000}, 
+"20" : {"attID" : 20, "minPower" : 200001, "maxPower" : 212500, "minDamage" : 1615000, "maxDamage" : 1700000}, 
+"21" : {"attID" : 21, "minPower" : 212501, "maxPower" : 225000, "minDamage" : 1710000, "maxDamage" : 1800000}
+}

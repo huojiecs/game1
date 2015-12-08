@@ -1,0 +1,10 @@
+{
+    "targetServerUID": 1110,
+    "sourceServerUID": [1109],
+    "dbNamePattern": "db_qmphs_%d_game",
+    "dbHost":  "188.188.0.163",
+    "dbPort": "3306",
+    "dbUser": "root",
+    "dbPw": "",
+    "callSP": true
+}

@@ -1,0 +1,5 @@
+{
+    "id": "games-master-server",
+    "host": "@outerHost",
+    "port": 26090
+}

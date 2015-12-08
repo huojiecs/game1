@@ -1,0 +1,11 @@
+{
+    "idip": [
+        {
+            "id": "idip-global-server-1",
+            "idipHost": "0.0.0.0",
+            "idipPort": 8130,
+            "host": "127.0.0.1",
+            "port": 26059
+        }
+    ]
+}

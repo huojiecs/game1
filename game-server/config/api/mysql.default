@@ -1,0 +1,18 @@
+{
+    "global": {
+        "loopCount": 10,
+        "dbMod": 10,
+        "isWhiteOnly": false,
+        "enableLog": false,
+        "isLogin": true,
+        "isCreateRole": true
+    },
+    "cmge_payment": {
+        "connectionLimit": 40,
+        "host": "@cmge_paymentHost",
+        "user": "@cmge_paymentUser",
+        "password": "@cmge_paymentPassword",
+        "database": "@cmge_paymentDb",
+        "port": "3306"
+    }
+}
